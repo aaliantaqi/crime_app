@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for location and network -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".CrimePredictionApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CrimePredictionApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <!-- Replace with your Google Maps API key from Google Cloud Console -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+
+        <!-- Splash screen - LAUNCHER -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CrimePredictionApp.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.LoginActivity" android:exported="false" />
+        <activity android:name=".activities.RegisterActivity" android:exported="false" />
+        <activity android:name=".activities.DashboardActivity" android:exported="false" />
+        <activity android:name=".activities.PredictionActivity" android:exported="false" />
+        <activity android:name=".activities.MapActivity" android:exported="false" />
+        <activity android:name=".activities.StatisticsActivity" android:exported="false" />
+        <activity android:name=".activities.ReportCrimeActivity" android:exported="false" />
+    </application>
+</manifest>

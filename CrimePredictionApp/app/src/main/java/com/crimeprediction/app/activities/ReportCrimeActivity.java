@@ -1,0 +1,178 @@
+package com.crimeprediction.app.activities;
+
+import android.app.DatePickerDialog;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.crimeprediction.app.R;
+import com.crimeprediction.app.utils.FirebaseHelper;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+
+public class ReportCrimeActivity extends AppCompatActivity {
+
+    private TextInputEditText editDescription, editDate;
+    private Spinner spinnerCity, spinnerCrimeType;
+    private TextView textReportError;
+    private MaterialButton btnSubmit;
+
+    private DatabaseReference reportsRef;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_report);
+
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
+
+        // Realtime Database reference
+        reportsRef = FirebaseDatabase.getInstance().getReference("reports");
+
+        spinnerCity = findViewById(R.id.spinnerCity);
+        spinnerCrimeType = findViewById(R.id.spinnerCrimeType);
+        editDescription = findViewById(R.id.editDescription);
+        editDate = findViewById(R.id.editDate);
+        textReportError = findViewById(R.id.textReportError);
+        btnSubmit = findViewById(R.id.btnSubmitReport);
+
+        // Cities dropdown
+        String[] cities = {"Select City"""Karachi", "Lahore", "Islamabad", "Multan"};
+
+        ArrayAdapter<String> cityAdapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_spinner_item,
+                cities
+        );
+
+        cityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerCity.setAdapter(cityAdapter);
+
+        // Crime types dropdown
+        String[] crimeTypes = {"Select Crime Type", "Theft", "Assault", "Fraud", "Vandalism"};
+
+        ArrayAdapter<String> crimeAdapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_spinner_item,
+                crimeTypes
+        );
+
+        crimeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerCrimeType.setAdapter(crimeAdapter);
+
+        // Default date
+        editDate.setText(
+                new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date())
+        );
+
+        // Date picker
+        editDate.setOnClickListener(v -> {
+
+            Calendar calendar = Calendar.getInstance();
+
+            DatePickerDialog dialog = new DatePickerDialog(
+                    ReportCrimeActivity.this,
+                    (view, year, month, day) ->
+                            editDate.setText(
+                                    String.format(
+                                            Locale.getDefault(),
+                                            "%04d-%02d-%02d",
+                                            year,
+                                            month + 1,
+                                            day
+                                    )
+                            ),
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH)
+            );
+
+            dialog.show();
+        });
+
+        btnSubmit.setOnClickListener(v -> submitReport());
+    }
+
+    private void submitReport() {
+
+        String location = spinnerCity.getSelectedItem().toString();
+        String crimeType = spinnerCrimeType.getSelectedItem().toString();
+        String description = editDescription.getText() != null ?
+                editDescription.getText().toString().trim() : "";
+        String date = editDate.getText() != null ?
+                editDate.getText().toString().trim() : "";
+
+        textReportError.setVisibility(View.GONE);
+
+        if (TextUtils.isEmpty(location)) {
+            textReportError.setText("Location is required");
+            textReportError.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        if (TextUtils.isEmpty(crimeType)) {
+            textReportError.setText("Crime type is required");
+            textReportError.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        if (TextUtils.isEmpty(date)) {
+            textReportError.setText("Date is required");
+            textReportError.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        btnSubmit.setEnabled(false);
+
+        String userId = FirebaseHelper.getCurrentUserId();
+
+        Map<String, Object> report = new HashMap<>();
+        report.put("location", location);
+        report.put("crimeType", crimeType);
+        report.put("description", description);
+        report.put("date", date);
+        report.put("userId", userId != null ? userId : "");
+        report.put("createdAt", System.currentTimeMillis());
+
+        reportsRef.push()
+                .setValue(report)
+                .addOnSuccessListener(unused -> {
+
+                    Toast.makeText(
+                            ReportCrimeActivity.this,
+                            "Report submitted successfully",
+                            Toast.LENGTH_SHORT
+                    ).show();
+
+                    finish();
+                })
+                .addOnFailureListener(e -> {
+
+                    textReportError.setText(e.getMessage());
+                    textReportError.setVisibility(View.VISIBLE);
+                    btnSubmit.setEnabled(true);
+                });
+    }
+}

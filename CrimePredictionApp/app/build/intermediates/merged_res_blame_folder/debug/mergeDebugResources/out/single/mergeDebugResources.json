@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_ic_map.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/ic_map.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_register.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_statistics.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_statistics.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_ic_shield.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/ic_shield.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_map.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_map.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_splash.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_ic_report.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/ic_report.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_report.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_report.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_spinner_bg.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/spinner_bg.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_ic_arrow.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/ic_arrow.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_login.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_prediction.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_prediction.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/layout_activity_dashboard.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xxhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-hdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xhdpi/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_ic_chart.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/ic_chart.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_app_logo.png.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/app_logo.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/drawable_ic_pie.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/drawable/ic_pie.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/menu_menu_dashboard.xml.flat",
+        "source": "com.crimeprediction.app-main-40:/menu/menu_dashboard.xml"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.crimeprediction.app-debug-38:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.crimeprediction.app-main-40:/mipmap-mdpi/ic_launcher_monochrome.png"
+    }
+]

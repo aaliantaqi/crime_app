@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary filled button used across the app -->
+    <style name="Widget.CrimeApp.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">56dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="rippleColor">@color/secondary</item>
+    </style>
+
+    <!-- Outline button variant -->
+    <style name="Widget.CrimeApp.Button.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_height">48dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="strokeColor">@color/secondary</item>
+        <item name="rippleColor">@color/secondary</item>
+    </style>
+
+    <!-- Dashboard and statistics cards -->
+    <style name="Widget.CrimeApp.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">18dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+
+</resources>

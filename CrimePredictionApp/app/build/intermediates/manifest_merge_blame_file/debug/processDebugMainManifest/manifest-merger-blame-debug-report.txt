@@ -1,0 +1,399 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.crimeprediction.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions for location and network -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:6:5-67
+12-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:7:5-79
+13-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:8:5-81
+14-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:8:22-78
+15    <!-- Include required permissions for Google Maps API to run. -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+26    </queries>
+27
+28    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+28-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\65e2d9806a6496a375ae3094ddb18ff5\transformed\recaptcha-18.5.1\AndroidManifest.xml:9:5-98
+28-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\65e2d9806a6496a375ae3094ddb18ff5\transformed\recaptcha-18.5.1\AndroidManifest.xml:9:22-95
+29
+30    <permission
+30-->[androidx.core:core:1.10.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\697fdb08de6dceb32777c4b9a6a224e8\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+31        android:name="com.crimeprediction.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.10.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\697fdb08de6dceb32777c4b9a6a224e8\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.10.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\697fdb08de6dceb32777c4b9a6a224e8\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.crimeprediction.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.10.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\697fdb08de6dceb32777c4b9a6a224e8\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.10.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\697fdb08de6dceb32777c4b9a6a224e8\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+35
+36    <application
+36-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:10:5-43:19
+37        android:name="com.crimeprediction.app.CrimePredictionApplication"
+37-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:11:9-51
+38        android:allowBackup="true"
+38-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:12:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.10.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\697fdb08de6dceb32777c4b9a6a224e8\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:icon="@mipmap/ic_launcher"
+42-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:13:9-43
+43        android:label="@string/app_name"
+43-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:15:9-41
+44        android:roundIcon="@mipmap/ic_launcher"
+44-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:14:9-48
+45        android:supportsRtl="true"
+45-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:16:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.CrimePredictionApp"
+47-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:17:9-56
+48        android:usesCleartextTraffic="true" >
+48-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:18:9-44
+49
+50        <!-- Replace with your Google Maps API key from Google Cloud Console -->
+51        <meta-data
+51-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:21:9-23:56
+52            android:name="com.google.android.geo.API_KEY"
+52-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:22:13-58
+53            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+53-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:23:13-53
+54
+55        <!-- Splash screen - LAUNCHER -->
+56        <activity
+56-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:26:9-34:20
+57            android:name="com.crimeprediction.app.activities.SplashActivity"
+57-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:27:13-54
+58            android:exported="true"
+58-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:28:13-36
+59            android:theme="@style/Theme.CrimePredictionApp.Splash" >
+59-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:29:13-67
+60            <intent-filter>
+60-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:30:13-33:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:31:17-69
+61-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:31:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:32:17-77
+63-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:32:27-74
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:36:9-87
+67            android:name="com.crimeprediction.app.activities.LoginActivity"
+67-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:36:19-59
+68            android:exported="false" />
+68-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:36:60-84
+69        <activity
+69-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:37:9-90
+70            android:name="com.crimeprediction.app.activities.RegisterActivity"
+70-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:37:19-62
+71            android:exported="false" />
+71-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:37:63-87
+72        <activity
+72-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:38:9-91
+73            android:name="com.crimeprediction.app.activities.DashboardActivity"
+73-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:38:19-63
+74            android:exported="false" />
+74-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:38:64-88
+75        <activity
+75-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:39:9-92
+76            android:name="com.crimeprediction.app.activities.PredictionActivity"
+76-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:39:19-64
+77            android:exported="false" />
+77-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:39:65-89
+78        <activity
+78-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:40:9-85
+79            android:name="com.crimeprediction.app.activities.MapActivity"
+79-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:40:19-57
+80            android:exported="false" />
+80-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:40:58-82
+81        <activity
+81-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:41:9-92
+82            android:name="com.crimeprediction.app.activities.StatisticsActivity"
+82-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:41:19-64
+83            android:exported="false" />
+83-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:41:65-89
+84        <activity
+84-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:42:9-93
+85            android:name="com.crimeprediction.app.activities.ReportCrimeActivity"
+85-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:42:19-65
+86            android:exported="false" />
+86-->F:\crime_app\CrimePredictionApp\app\src\main\AndroidManifest.xml:42:66-90
+87        <!-- Needs to be explicitly declared on P+ -->
+88        <uses-library
+88-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+89            android:name="org.apache.http.legacy"
+89-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+90            android:required="false" />
+90-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+91
+92        <activity
+92-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
+93            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+93-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:30:13-80
+94            android:excludeFromRecents="true"
+94-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:31:13-46
+95            android:exported="true"
+95-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:32:13-36
+96            android:launchMode="singleTask"
+96-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:33:13-44
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+97-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:34:13-72
+98            <intent-filter>
+98-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:35:13-45:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+99-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+101-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+102-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+103
+104                <data
+104-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+105                    android:host="firebase.auth"
+105-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+106                    android:path="/"
+106-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+107                    android:scheme="genericidp" />
+107-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+108            </intent-filter>
+109        </activity>
+110        <activity
+110-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:47:9-64:20
+111            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+111-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:48:13-79
+112            android:excludeFromRecents="true"
+112-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:49:13-46
+113            android:exported="true"
+113-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:50:13-36
+114            android:launchMode="singleTask"
+114-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:51:13-44
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+115-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:52:13-72
+116            <intent-filter>
+116-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:53:13-63:29
+117                <action android:name="android.intent.action.VIEW" />
+117-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+117-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+119-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+120                <category android:name="android.intent.category.BROWSABLE" />
+120-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+120-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+121
+122                <data
+122-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+123                    android:host="firebase.auth"
+123-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+124                    android:path="/"
+124-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+125                    android:scheme="recaptcha" />
+125-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+126            </intent-filter>
+127        </activity>
+128
+129        <service
+129-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:66:9-72:19
+130            android:name="com.google.firebase.components.ComponentDiscoveryService"
+130-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:67:13-84
+131            android:directBootAware="true"
+131-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+132            android:exported="false" >
+132-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:68:13-37
+133            <meta-data
+133-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
+134                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+134-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:70:17-109
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\cf0b5d44ad77db4836286169b4504d21\transformed\firebase-auth-23.1.0\AndroidManifest.xml:71:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\f4712cd188e90f9ea7f5cc56f32379b4\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
+137                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+137-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\f4712cd188e90f9ea7f5cc56f32379b4\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\f4712cd188e90f9ea7f5cc56f32379b4\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\f4712cd188e90f9ea7f5cc56f32379b4\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
+140                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+140-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\f4712cd188e90f9ea7f5cc56f32379b4\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\f4712cd188e90f9ea7f5cc56f32379b4\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9feefa6a0deccd26d94d1877d0152098\transformed\firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+143                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+143-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9feefa6a0deccd26d94d1877d0152098\transformed\firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9feefa6a0deccd26d94d1877d0152098\transformed\firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+145            <meta-data
+145-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9feefa6a0deccd26d94d1877d0152098\transformed\firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+146                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+146-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9feefa6a0deccd26d94d1877d0152098\transformed\firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9feefa6a0deccd26d94d1877d0152098\transformed\firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5543b8ddedbe29467fd0c705f2ab1e4f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+149                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+149-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5543b8ddedbe29467fd0c705f2ab1e4f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5543b8ddedbe29467fd0c705f2ab1e4f\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+152                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+152-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+154        </service>
+155        <service
+155-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+156            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+156-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+157            android:enabled="true"
+157-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+158            android:exported="false" >
+158-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+159            <meta-data
+159-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+160                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+160-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+161                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+161-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+162        </service>
+163
+164        <activity
+164-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+165            android:name="androidx.credentials.playservices.HiddenActivity"
+165-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+166            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+166-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+167            android:enabled="true"
+167-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+168            android:exported="false"
+168-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+169            android:fitsSystemWindows="true"
+169-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+170            android:theme="@style/Theme.Hidden" >
+170-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+171        </activity>
+172        <activity
+172-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+173            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+173-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+174            android:excludeFromRecents="true"
+174-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+177        <!--
+178            Service handling Google Sign-In user revocation. For apps that do not integrate with
+179            Google Sign-In, this service will never be started.
+180        -->
+181        <service
+181-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+182            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+182-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+183            android:exported="true"
+183-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+184            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+184-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+185            android:visibleToInstantApps="true" />
+185-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+186
+187        <provider
+187-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+188            android:name="com.google.firebase.provider.FirebaseInitProvider"
+188-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+189            android:authorities="com.crimeprediction.app.firebaseinitprovider"
+189-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+190            android:directBootAware="true"
+190-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+191            android:exported="false"
+191-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+192            android:initOrder="100" />
+192-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+193
+194        <activity
+194-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5da4bf8da6a7e197a10878cc184850e0\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+195            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+195-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5da4bf8da6a7e197a10878cc184850e0\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+196            android:exported="false"
+196-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5da4bf8da6a7e197a10878cc184850e0\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+197            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+197-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5da4bf8da6a7e197a10878cc184850e0\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+198
+199        <meta-data
+199-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\8991b340dd427cf10d162493e7139f1f\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+200            android:name="com.google.android.gms.version"
+200-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\8991b340dd427cf10d162493e7139f1f\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+201            android:value="@integer/google_play_services_version" />
+201-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\8991b340dd427cf10d162493e7139f1f\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+202
+203        <provider
+203-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+204            android:name="androidx.startup.InitializationProvider"
+204-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+205            android:authorities="com.crimeprediction.app.androidx-startup"
+205-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+206            android:exported="false" >
+206-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+207            <meta-data
+207-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+208                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+208-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+209                android:value="androidx.startup" />
+209-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+210            <meta-data
+210-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\4adde7da4090783471b6b9f046e59a7b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+211                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+211-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\4adde7da4090783471b6b9f046e59a7b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+212                android:value="androidx.startup" />
+212-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\4adde7da4090783471b6b9f046e59a7b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+213        </provider> <!-- The activities will be merged into the manifest of the hosting app. -->
+214        <activity
+214-->[com.google.android.play:core-common:2.0.3] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a65b35d8978b5f421d8ec4e6ca2ca440\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+215            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+215-->[com.google.android.play:core-common:2.0.3] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a65b35d8978b5f421d8ec4e6ca2ca440\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+216            android:exported="false"
+216-->[com.google.android.play:core-common:2.0.3] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a65b35d8978b5f421d8ec4e6ca2ca440\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+217            android:stateNotNeeded="true"
+217-->[com.google.android.play:core-common:2.0.3] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a65b35d8978b5f421d8ec4e6ca2ca440\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+218            android:theme="@style/Theme.PlayCore.Transparent" />
+218-->[com.google.android.play:core-common:2.0.3] C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a65b35d8978b5f421d8ec4e6ca2ca440\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+219    </application>
+220
+221</manifest>

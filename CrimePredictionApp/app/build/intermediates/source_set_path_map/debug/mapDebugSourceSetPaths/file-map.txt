@@ -1,0 +1,41 @@
+com.crimeprediction.app-annotation-experimental-1.3.0-0 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\178b2474358b490b708eb7fb5d8dca13\transformed\annotation-experimental-1.3.0\res
+com.crimeprediction.app-transition-1.2.0-1 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\1cef92bd6810549a77e0e670afc1ddda\transformed\transition-1.2.0\res
+com.crimeprediction.app-activity-1.6.0-2 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\2939d33cb8dfae21006566711228c1b1\transformed\activity-1.6.0\res
+com.crimeprediction.app-coordinatorlayout-1.1.0-3 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\2c1e901ca1eef0cb4c6f7f8ca79eddb7\transformed\coordinatorlayout-1.1.0\res
+com.crimeprediction.app-cardview-1.0.0-4 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\2f444bbf0979fdc7eb881bf0efdc16e1\transformed\cardview-1.0.0\res
+com.crimeprediction.app-viewpager2-1.0.0-5 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\402003562700d8122e88ded60e9f57e4\transformed\viewpager2-1.0.0\res
+com.crimeprediction.app-emoji2-1.2.0-6 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\471b046b85585b9e4578161e11e246aa\transformed\emoji2-1.2.0\res
+com.crimeprediction.app-lifecycle-process-2.4.1-7 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\4adde7da4090783471b6b9f046e59a7b\transformed\lifecycle-process-2.4.1\res
+com.crimeprediction.app-emoji2-views-helper-1.2.0-8 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\4d4894e4b1b5a85490eb857babfde5ae\transformed\emoji2-views-helper-1.2.0\res
+com.crimeprediction.app-play-services-base-18.1.0-9 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\5da4bf8da6a7e197a10878cc184850e0\transformed\play-services-base-18.1.0\res
+com.crimeprediction.app-appcompat-resources-1.6.1-10 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\62648002cad42f8285e3a3c06ada41be\transformed\appcompat-resources-1.6.1\res
+com.crimeprediction.app-fragment-1.3.6-11 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\68007e41f3886f417a1eb6313e5b19ee\transformed\fragment-1.3.6\res
+com.crimeprediction.app-core-1.10.1-12 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\697fdb08de6dceb32777c4b9a6a224e8\transformed\core-1.10.1\res
+com.crimeprediction.app-core-ktx-1.10.1-13 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\6abcf394852c39334f9fa825728085a7\transformed\core-ktx-1.10.1\res
+com.crimeprediction.app-material-1.9.0-14 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\7afb8a68d41821e9a896cd47fe5fbc6b\transformed\material-1.9.0\res
+com.crimeprediction.app-lifecycle-viewmodel-2.5.1-15 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\7d9ab318c37e7bbfc491c18fc6860deb\transformed\lifecycle-viewmodel-2.5.1\res
+com.crimeprediction.app-lifecycle-livedata-core-2.5.1-16 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\7e56ad9d5f4a5317ed5caaa6b5e09b1f\transformed\lifecycle-livedata-core-2.5.1\res
+com.crimeprediction.app-browser-1.4.0-17 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\800693d9a7127b24d2ccfd397fbbf6a3\transformed\browser-1.4.0\res
+com.crimeprediction.app-lifecycle-runtime-2.5.1-18 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\816016f9819ebda467871dd60354f3d8\transformed\lifecycle-runtime-2.5.1\res
+com.crimeprediction.app-play-services-basement-18.4.0-19 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\8991b340dd427cf10d162493e7139f1f\transformed\play-services-basement-18.4.0\res
+com.crimeprediction.app-play-services-auth-20.7.0-20 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9089496f6a7272bd2e156f4107defd51\transformed\play-services-auth-20.7.0\res
+com.crimeprediction.app-credentials-play-services-auth-1.2.0-rc01-21 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\9210ce584c7440fc7f682e2078dc5bbc\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.crimeprediction.app-appcompat-1.6.1-22 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\952c1b13e78be2edac50969b43de5f59\transformed\appcompat-1.6.1\res
+com.crimeprediction.app-drawerlayout-1.1.1-23 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\98ebe77715c6f5817649419311f21a14\transformed\drawerlayout-1.1.1\res
+com.crimeprediction.app-constraintlayout-2.1.4-24 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a3beca9cd7eb9bd050e5bb6e8813f9cd\transformed\constraintlayout-2.1.4\res
+com.crimeprediction.app-core-common-2.0.3-25 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a65b35d8978b5f421d8ec4e6ca2ca440\transformed\core-common-2.0.3\res
+com.crimeprediction.app-lifecycle-viewmodel-savedstate-2.5.1-26 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\a8a1cbe442cf8e8ab0d8245bafc6fb16\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.crimeprediction.app-play-services-maps-18.2.0-27 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\ac156566017393f0b2dda99aa98e0586\transformed\play-services-maps-18.2.0\res
+com.crimeprediction.app-credentials-1.2.0-rc01-28 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\b5f9c9df3dc52d4ad4948618c5a40625\transformed\credentials-1.2.0-rc01\res
+com.crimeprediction.app-startup-runtime-1.1.1-29 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\b5fe9b32d732c55683ea124097e04c60\transformed\startup-runtime-1.1.1\res
+com.crimeprediction.app-firebase-common-21.0.0-30 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\bfa950b7cae4b0c003b61b235e1c9586\transformed\firebase-common-21.0.0\res
+com.crimeprediction.app-recyclerview-1.1.0-31 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\e78eb26122104517d19539576cde0f54\transformed\recyclerview-1.1.0\res
+com.crimeprediction.app-savedstate-1.2.0-32 C:\Users\Aalian Taqi\.gradle\caches\9.0-milestone-1\transforms\f2976ca05121f25307a9e4ab05903001\transformed\savedstate-1.2.0\res
+com.crimeprediction.app-pngs-33 F:\crime_app\CrimePredictionApp\app\build\generated\res\pngs\debug
+com.crimeprediction.app-res-34 F:\crime_app\CrimePredictionApp\app\build\generated\res\processDebugGoogleServices
+com.crimeprediction.app-resValues-35 F:\crime_app\CrimePredictionApp\app\build\generated\res\resValues\debug
+com.crimeprediction.app-packageDebugResources-36 F:\crime_app\CrimePredictionApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.crimeprediction.app-packageDebugResources-37 F:\crime_app\CrimePredictionApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.crimeprediction.app-debug-38 F:\crime_app\CrimePredictionApp\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.crimeprediction.app-debug-39 F:\crime_app\CrimePredictionApp\app\src\debug\res
+com.crimeprediction.app-main-40 F:\crime_app\CrimePredictionApp\app\src\main\res

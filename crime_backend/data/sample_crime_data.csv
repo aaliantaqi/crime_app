@@ -1,0 +1,27 @@
+city,area,time_of_day,day_of_week,crime_type,risk_level
+Multan,Gulgasht,Night,Friday,Robbery,High
+Multan,Gulgasht,Morning,Monday,Theft,Low
+Multan,Hussain Agahi,Afternoon,Wednesday,Theft,Medium
+Multan,Hussain Agahi,Night,Saturday,Robbery,High
+Multan,Bosan Road,Morning,Tuesday,Burglary,Medium
+Multan,Bosan Road,Night,Friday,Assault,High
+Lahore,DHA,Morning,Monday,Theft,Low
+Lahore,DHA,Night,Saturday,Robbery,Medium
+Lahore,Model Town,Afternoon,Thursday,Theft,Medium
+Lahore,Model Town,Night,Friday,Burglary,High
+Karachi,Saddar,Morning,Wednesday,Theft,Medium
+Karachi,Saddar,Night,Friday,Robbery,High
+Islamabad,F-7,Morning,Monday,Theft,Low
+Islamabad,F-7,Afternoon,Sunday,Theft,Low
+Multan,Gulgasht,Afternoon,Saturday,Assault,Medium
+Multan,Gulgasht,Night,Thursday,Robbery,High
+Lahore,DHA,Afternoon,Tuesday,Theft,Low
+Lahore,Model Town,Night,Friday,Robbery,High
+Karachi,Saddar,Afternoon,Monday,Burglary,Medium
+Multan,Bosan Road,Afternoon,Wednesday,Theft,Medium
+Multan,Hussain Agahi,Morning,Friday,Theft,Low
+Lahore,DHA,Night,Friday,Burglary,Medium
+Islamabad,F-7,Night,Saturday,Robbery,Medium
+Multan,Gulgasht,Morning,Wednesday,Burglary,Low
+Karachi,Saddar,Night,Saturday,Assault,High
+Lahore,Model Town,Morning,Monday,Theft,Low

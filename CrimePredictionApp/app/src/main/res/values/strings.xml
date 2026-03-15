@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crime Rate Prediction App</string>
+    <string name="splash_title">Crime Rate Prediction App</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="predict_crime">Predict Crime</string>
+    <string name="crime_map">Crime Map</string>
+    <string name="crime_statistics">Crime Statistics</string>
+    <string name="report_crime">Report Crime</string>
+    <string name="city">City</string>
+    <string name="area">Area</string>
+    <string name="time_of_day">Time of Day</string>
+    <string name="day_of_week">Day of Week</string>
+    <string name="crime_category">Crime Category (Optional)</string>
+    <string name="predict_risk">Predict Crime Risk</string>
+    <string name="risk_level">Risk Level</string>
+    <string name="probability">Probability</string>
+    <string name="predicted_crime">Predicted Crime Type</string>
+    <string name="location">Location</string>
+    <string name="crime_type">Crime Type</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="submit_report">Submit Report</string>
+    <string name="logout">Logout</string>
+    <string name="report_heading">Report a Crime Easily</string>
+</resources>
