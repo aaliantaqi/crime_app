@@ -3,7 +3,10 @@ package com.crimeprediction.app.activities;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,19 +50,18 @@ import java.util.TreeMap;
  */
 public class StatisticsActivity extends AppCompatActivity {
 
-    private static final int MODE_CITY = 0;
-    private static final int MODE_AREA = 1;
-
     private LineChart chartTrend;
     private PieChart chartPie;
     private BarChart chartBar;
     private ProgressBar progressStats;
     private TextView textStatsEmpty;
     private View layoutCharts;
-    private MaterialButtonToggleGroup toggleCityArea;
+    private MaterialButtonToggleGroup toggleCity;
+    private Spinner spinnerAreaFilter;
 
     private List<ReportItem> reportList = new ArrayList<>();
-    private int currentMode = MODE_CITY;
+    private String selectedCity = "Multan";
+    private String selectedArea = "All Areas";
 
     /** Simple DTO for chart binding (no dependency on API response class). */
     private interface ChartData {
@@ -82,11 +84,13 @@ public class StatisticsActivity extends AppCompatActivity {
 
     private static class ReportItem {
         String crimeType;
-        String location;
+        String city;
+        String area;
         long timestamp;
-        ReportItem(String crimeType, String location, long timestamp) {
+        ReportItem(String crimeType, String city, String area, long timestamp) {
             this.crimeType = crimeType;
-            this.location = location != null ? location.trim() : "";
+            this.city = city != null ? city.trim() : "";
+            this.area = area != null ? area.trim() : "";
             this.timestamp = timestamp;
         }
     }
@@ -107,23 +111,73 @@ public class StatisticsActivity extends AppCompatActivity {
         progressStats = findViewById(R.id.progressStats);
         textStatsEmpty = findViewById(R.id.textStatsEmpty);
         layoutCharts = findViewById(R.id.layoutCharts);
-        toggleCityArea = findViewById(R.id.toggleCityArea);
+        toggleCity = findViewById(R.id.toggleCity);
+        spinnerAreaFilter = findViewById(R.id.spinnerAreaFilter);
 
-        // Default: City selected (handled by XML checked state)
-        currentMode = MODE_CITY;
-        toggleCityArea.check(R.id.btnCity);
-
-        toggleCityArea.addOnButtonCheckedListener((group, checkedId, isChecked) -> {
-            if (!isChecked) return;
-            if (checkedId == R.id.btnCity) {
-                currentMode = MODE_CITY;
-            } else if (checkedId == R.id.btnArea) {
-                currentMode = MODE_AREA;
-            }
-            refreshChartsFromReports();
-        });
+        // Default selected city: Multan
+        toggleCity.check(R.id.btnCityMultan);
+        setupCityToggle();
+        setupAreaSpinnerForCity(selectedCity);
 
         loadReportsFromFirebase();
+    }
+
+    private void setupCityToggle() {
+        toggleCity.addOnButtonCheckedListener((group, checkedId, isChecked) -> {
+            if (!isChecked) return;
+            if (checkedId == R.id.btnCityMultan) {
+                selectedCity = "Multan";
+            } else if (checkedId == R.id.btnCityLahore) {
+                selectedCity = "Lahore";
+            } else if (checkedId == R.id.btnCityKarachi) {
+                selectedCity = "Karachi";
+            } else if (checkedId == R.id.btnCityIslamabad) {
+                selectedCity = "Islamabad";
+            }
+            setupAreaSpinnerForCity(selectedCity);
+            refreshChartsFromReports();
+        });
+    }
+
+    private void setupAreaSpinnerForCity(String city) {
+        String[] areas;
+        switch (city) {
+            case "Multan":
+                areas = new String[]{"All Areas", "Gulgasht", "Bosan Road", "Hussain Agahi"};
+                break;
+            case "Lahore":
+                areas = new String[]{"All Areas", "DHA", "Model Town", "Johar Town"};
+                break;
+            case "Karachi":
+                areas = new String[]{"All Areas", "Saddar", "Clifton", "Defence"};
+                break;
+            case "Islamabad":
+                areas = new String[]{"All Areas", "F-7", "F-8", "G-10"};
+                break;
+            default:
+                areas = new String[]{"All Areas"};
+                break;
+        }
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_spinner_item,
+                areas
+        );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerAreaFilter.setAdapter(adapter);
+        spinnerAreaFilter.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                selectedArea = areas[position];
+                refreshChartsFromReports();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // no-op
+            }
+        });
     }
 
     private void loadReportsFromFirebase() {
@@ -132,17 +186,27 @@ public class StatisticsActivity extends AppCompatActivity {
         textStatsEmpty.setVisibility(View.GONE);
 
         DatabaseReference reportsRef = FirebaseDatabase.getInstance().getReference("Reports");
-        reportsRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        reportsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 progressStats.setVisibility(View.GONE);
                 reportList.clear();
                 for (DataSnapshot child : snapshot.getChildren()) {
                     String crimeType = child.child("crimeType").getValue(String.class);
-                    String location = child.child("location").getValue(String.class);
+                    String city = child.child("city").getValue(String.class);
+                    if (city == null) {
+                        // Fallback: use "location" as city if older schema
+                        city = child.child("location").getValue(String.class);
+                    }
+                    String area = child.child("area").getValue(String.class);
                     Long ts = child.child("timestamp").getValue(Long.class);
-                    if (crimeType != null && location != null && !"Select City".equalsIgnoreCase(location)) {
-                        reportList.add(new ReportItem(crimeType, location, ts != null ? ts : 0L));
+                    if (crimeType != null && city != null && !"Select City".equalsIgnoreCase(city)) {
+                        reportList.add(new ReportItem(
+                                crimeType,
+                                city,
+                                area != null ? area : "",
+                                ts != null ? ts : 0L
+                        ));
                     }
                 }
                 refreshChartsFromReports();
@@ -158,7 +222,21 @@ public class StatisticsActivity extends AppCompatActivity {
     }
 
     private void refreshChartsFromReports() {
-        ChartData data = buildChartData(reportList, currentMode);
+        // Filter by current city and area before building chart data
+        List<ReportItem> filtered = new ArrayList<>();
+        for (ReportItem r : reportList) {
+            if (r.city == null) continue;
+            if (!r.city.equalsIgnoreCase(selectedCity)) continue;
+            if (selectedArea != null
+                    && !"All Areas".equalsIgnoreCase(selectedArea)
+                    && r.area != null
+                    && !r.area.equalsIgnoreCase(selectedArea)) {
+                continue;
+            }
+            filtered.add(r);
+        }
+
+        ChartData data = buildChartData(filtered);
         if (isEmpty(data)) {
             showEmptyState();
             return;
@@ -194,10 +272,9 @@ public class StatisticsActivity extends AppCompatActivity {
     }
 
     /**
-     * Build chart data from reports. City mode: group by city (location).
-     * Area mode: group by area (simulated from location when no area field exists).
+     * Build chart data from already-filtered reports.
      */
-    private ChartData buildChartData(List<ReportItem> reports, int mode) {
+    private ChartData buildChartData(List<ReportItem> reports) {
         // Monthly trend: group by month (same for city/area)
         Calendar cal = Calendar.getInstance();
         Map<String, Integer> monthCounts = new TreeMap<>();
@@ -220,15 +297,15 @@ public class StatisticsActivity extends AppCompatActivity {
             }
         }
 
-        // High risk: by city (mode city) or by area (mode area — use location as area when no area field)
-        Map<String, Integer> locationCounts = new HashMap<>();
+        // High risk: by area within selected city
+        Map<String, Integer> areaCounts = new HashMap<>();
         for (ReportItem r : reports) {
-            if (r.location == null || r.location.isEmpty()) continue;
-            String key = r.location;
-            locationCounts.put(key, locationCounts.getOrDefault(key, 0) + 1);
+            if (r.area == null || r.area.isEmpty()) continue;
+            String key = r.area;
+            areaCounts.put(key, areaCounts.getOrDefault(key, 0) + 1);
         }
         List<AreaRisk> highRiskItems = new ArrayList<>();
-        for (Map.Entry<String, Integer> e : locationCounts.entrySet()) {
+        for (Map.Entry<String, Integer> e : areaCounts.entrySet()) {
             highRiskItems.add(new AreaRisk(e.getKey(), (double) e.getValue()));
         }
         // Sort by risk descending and take top entries
@@ -298,7 +375,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 areaLabels.add(item.area);
                 j++;
             }
-            BarDataSet set = new BarDataSet(barEntries, currentMode == MODE_CITY ? "Risk score (city)" : "Risk score (area)");
+            BarDataSet set = new BarDataSet(barEntries, "High risk areas");
             set.setColor(Color.parseColor("#EF4444"));
             chartBar.getXAxis().setValueFormatter(new IndexAxisValueFormatter(areaLabels));
             chartBar.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);

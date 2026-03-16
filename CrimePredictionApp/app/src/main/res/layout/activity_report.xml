@@ -49,7 +49,6 @@
                     android:gravity="center"
                     android:layout_marginBottom="16dp"/>
 
-                <!-- City Spinner -->
                 <!-- City Label -->
                 <TextView
                     android:layout_width="wrap_content"
@@ -63,6 +62,26 @@
                 <!-- City Spinner -->
                 <Spinner
                     android:id="@+id/spinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_bg"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:spinnerMode="dropdown" />
+
+                <!-- Area Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Area Spinner -->
+                <Spinner
+                    android:id="@+id/spinnerArea"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:background="@drawable/spinner_bg"
@@ -150,6 +169,15 @@
                     android:layout_marginTop="24dp"
                     android:text="@string/submit_report"
                     android:stateListAnimator="@animator/button_press_state" />
+
+                <!-- Submit Progress -->
+                <ProgressBar
+                    android:id="@+id/progressReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </ScrollView>

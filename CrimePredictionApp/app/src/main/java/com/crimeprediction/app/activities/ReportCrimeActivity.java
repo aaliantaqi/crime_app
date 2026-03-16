@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,9 +29,10 @@ import java.util.Map;
 public class ReportCrimeActivity extends AppCompatActivity {
 
     private TextInputEditText editDescription, editDate;
-    private Spinner spinnerCity, spinnerCrimeType;
+    private Spinner spinnerCity, spinnerArea, spinnerCrimeType;
     private TextView textReportError;
     private MaterialButton btnSubmit;
+    private ProgressBar progressReport;
 
     private DatabaseReference reportsRef;
 
@@ -52,10 +54,12 @@ public class ReportCrimeActivity extends AppCompatActivity {
 
         spinnerCity = findViewById(R.id.spinnerCity);
         spinnerCrimeType = findViewById(R.id.spinnerCrimeType);
+        spinnerArea = findViewById(R.id.spinnerArea);
         editDescription = findViewById(R.id.editDescription);
         editDate = findViewById(R.id.editDate);
         textReportError = findViewById(R.id.textReportError);
         btnSubmit = findViewById(R.id.btnSubmitReport);
+        progressReport = findViewById(R.id.progressReport);
 
         // Cities dropdown (Location)
         String[] cities = {"Select City", "Karachi", "Lahore", "Islamabad", "Multan"};
@@ -68,6 +72,44 @@ public class ReportCrimeActivity extends AppCompatActivity {
 
         cityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerCity.setAdapter(cityAdapter);
+
+        // Area dropdown depends on selected city
+        spinnerCity.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(android.widget.AdapterView<?> parent, View view, int position, long id) {
+                String city = cities[position];
+                String[] areas;
+                switch (city) {
+                    case "Multan":
+                        areas = new String[]{"Select Area", "Gulgasht", "Bosan Road", "Hussain Agahi"};
+                        break;
+                    case "Lahore":
+                        areas = new String[]{"Select Area", "DHA", "Model Town", "Johar Town"};
+                        break;
+                    case "Karachi":
+                        areas = new String[]{"Select Area", "Saddar", "Clifton", "Defence"};
+                        break;
+                    case "Islamabad":
+                        areas = new String[]{"Select Area", "F-7", "F-8", "G-10"};
+                        break;
+                    default:
+                        areas = new String[]{"Select Area"};
+                        break;
+                }
+                ArrayAdapter<String> areaAdapter = new ArrayAdapter<>(
+                        ReportCrimeActivity.this,
+                        android.R.layout.simple_spinner_item,
+                        areas
+                );
+                areaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinnerArea.setAdapter(areaAdapter);
+            }
+
+            @Override
+            public void onNothingSelected(android.widget.AdapterView<?> parent) {
+                // no-op
+            }
+        });
 
         // Crime types dropdown
         String[] crimeTypes = {"Select Crime Type", "Theft", "Assault", "Fraud", "Vandalism"};
@@ -117,6 +159,8 @@ public class ReportCrimeActivity extends AppCompatActivity {
     private void submitReport() {
         String location = spinnerCity.getSelectedItem() != null
                 ? spinnerCity.getSelectedItem().toString().trim() : "";
+        String area = spinnerArea.getSelectedItem() != null
+                ? spinnerArea.getSelectedItem().toString().trim() : "";
         String crimeType = spinnerCrimeType.getSelectedItem() != null
                 ? spinnerCrimeType.getSelectedItem().toString().trim() : "";
         String description = editDescription.getText() != null
@@ -124,8 +168,9 @@ public class ReportCrimeActivity extends AppCompatActivity {
 
         textReportError.setVisibility(View.GONE);
 
-        // Require Crime Type, Description, and Location (no "Select..." placeholders)
+        // Require Crime Type, Description, City & Area (no "Select..." placeholders)
         if (TextUtils.isEmpty(location) || "Select City".equalsIgnoreCase(location)
+                || TextUtils.isEmpty(area) || "Select Area".equalsIgnoreCase(area)
                 || TextUtils.isEmpty(crimeType) || "Select Crime Type".equalsIgnoreCase(crimeType)
                 || TextUtils.isEmpty(description)) {
             Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
@@ -133,6 +178,7 @@ public class ReportCrimeActivity extends AppCompatActivity {
         }
 
         btnSubmit.setEnabled(false);
+        progressReport.setVisibility(View.VISIBLE);
 
         String reportId = reportsRef.push().getKey();
         if (reportId == null) {
@@ -144,7 +190,10 @@ public class ReportCrimeActivity extends AppCompatActivity {
         Map<String, Object> report = new HashMap<>();
         report.put("crimeType", crimeType);
         report.put("description", description);
+        // Store city and area separately; keep location as city for compatibility
         report.put("location", location);
+        report.put("city", location);
+        report.put("area", area);
         report.put("timestamp", System.currentTimeMillis());
 
         reportsRef.child(reportId).setValue(report)
@@ -152,18 +201,24 @@ public class ReportCrimeActivity extends AppCompatActivity {
                     Toast.makeText(ReportCrimeActivity.this, "Report submitted successfully", Toast.LENGTH_SHORT).show();
                     clearInputFields();
                     btnSubmit.setEnabled(true);
+                    progressReport.setVisibility(View.GONE);
                 })
                 .addOnFailureListener(e -> {
                     Toast.makeText(ReportCrimeActivity.this, "Failed to submit report", Toast.LENGTH_SHORT).show();
                     btnSubmit.setEnabled(true);
+                    progressReport.setVisibility(View.GONE);
                 });
     }
 
     private void clearInputFields() {
         editDescription.setText("");
         spinnerCity.setSelection(0);
+        if (spinnerArea.getAdapter() != null) {
+            spinnerArea.setSelection(0);
+        }
         spinnerCrimeType.setSelection(0);
         editDate.setText(new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date()));
         textReportError.setVisibility(View.GONE);
+        progressReport.setVisibility(View.GONE);
     }
 }
