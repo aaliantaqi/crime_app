@@ -35,11 +35,16 @@ public class ReportCrimeActivity extends AppCompatActivity {
     private ProgressBar progressReport;
 
     private DatabaseReference reportsRef;
+    private static final String REPORTS_PATH = "reports";
+    private TextInputEditText editLat, editLng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
+
+        editLat = findViewById(R.id.editLat);
+        editLng = findViewById(R.id.editLng);
 
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -49,8 +54,8 @@ public class ReportCrimeActivity extends AppCompatActivity {
 
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
-        // Realtime Database reference — "Reports" node
-        reportsRef = FirebaseDatabase.getInstance().getReference("Reports");
+        // Realtime Database reference — "/reports" node
+        reportsRef = FirebaseDatabase.getInstance().getReference(REPORTS_PATH);
 
         spinnerCity = findViewById(R.id.spinnerCity);
         spinnerCrimeType = findViewById(R.id.spinnerCrimeType);
@@ -112,7 +117,13 @@ public class ReportCrimeActivity extends AppCompatActivity {
         });
 
         // Crime types dropdown
-        String[] crimeTypes = {"Select Crime Type", "Theft", "Assault", "Fraud", "Vandalism"};
+        String[] crimeTypes = {
+                "Select Crime Type",
+                "Theft",
+                "Assault",
+                "Fraud",
+                "Vandalism"
+        };
 
         ArrayAdapter<String> crimeAdapter = new ArrayAdapter<>(
                 this,
@@ -165,18 +176,57 @@ public class ReportCrimeActivity extends AppCompatActivity {
                 ? spinnerCrimeType.getSelectedItem().toString().trim() : "";
         String description = editDescription.getText() != null
                 ? editDescription.getText().toString().trim() : "";
+        String date = editDate.getText() != null
+                ? editDate.getText().toString().trim() : "";
+        String latStr = editLat.getText() != null ? editLat.getText().toString().trim() : "";
+        String lngStr = editLng.getText() != null ? editLng.getText().toString().trim() : "";
 
-        textReportError.setVisibility(View.GONE);
-
-        // Require Crime Type, Description, City & Area (no "Select..." placeholders)
-        if (TextUtils.isEmpty(location) || "Select City".equalsIgnoreCase(location)
-                || TextUtils.isEmpty(area) || "Select Area".equalsIgnoreCase(area)
-                || TextUtils.isEmpty(crimeType) || "Select Crime Type".equalsIgnoreCase(crimeType)
-                || TextUtils.isEmpty(description)) {
-            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+        // Validate all fields first
+        if (TextUtils.isEmpty(location) || "Select City".equalsIgnoreCase(location)) {
+            Toast.makeText(this, "Please select a city", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(area) || "Select Area".equalsIgnoreCase(area)) {
+            Toast.makeText(this, "Please select an area", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(crimeType) || "Select Crime Type".equalsIgnoreCase(crimeType)) {
+            Toast.makeText(this, "Please select a crime type", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(description)) {
+            Toast.makeText(this, "Please enter a description", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(date)) {
+            Toast.makeText(this, "Please select a date", Toast.LENGTH_SHORT).show();
             return;
         }
 
+            if (TextUtils.isEmpty(latStr) || TextUtils.isEmpty(lngStr)) {
+                Toast.makeText(this, "Please enter latitude and longitude", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+// Resolve coordinates
+            double lat = 0.0;
+            double lng = 0.0;
+
+            try {
+                lat = Double.parseDouble(latStr);
+                lng = Double.parseDouble(lngStr);
+            } catch (Exception e) {
+                Toast.makeText(this, "Invalid coordinates", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if (lat == 0.0 && lng == 0.0) {
+                Toast.makeText(this, "Coordinates cannot be zero", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+
+        textReportError.setVisibility(View.GONE);
         btnSubmit.setEnabled(false);
         progressReport.setVisibility(View.VISIBLE);
 
@@ -190,10 +240,11 @@ public class ReportCrimeActivity extends AppCompatActivity {
         Map<String, Object> report = new HashMap<>();
         report.put("crimeType", crimeType);
         report.put("description", description);
-        // Store city and area separately; keep location as city for compatibility
-        report.put("location", location);
         report.put("city", location);
         report.put("area", area);
+        report.put("date", date);
+        report.put("lat", lat);
+        report.put("lng", lng);
         report.put("timestamp", System.currentTimeMillis());
 
         reportsRef.child(reportId).setValue(report)
@@ -209,7 +260,6 @@ public class ReportCrimeActivity extends AppCompatActivity {
                     progressReport.setVisibility(View.GONE);
                 });
     }
-
     private void clearInputFields() {
         editDescription.setText("");
         spinnerCity.setSelection(0);
@@ -221,4 +271,5 @@ public class ReportCrimeActivity extends AppCompatActivity {
         textReportError.setVisibility(View.GONE);
         progressReport.setVisibility(View.GONE);
     }
+
 }

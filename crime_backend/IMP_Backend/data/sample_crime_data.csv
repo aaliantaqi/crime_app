@@ -1,0 +1,1002 @@
+city,area,crime_type,time_of_day,day_of_week,report_count,risk_level
+Karachi,Saddar,Theft,Afternoon,Thursday,138,Medium
+Karachi,Defence,Assault,Night,Saturday,13,High
+Karachi,Clifton,Vandalism,Morning,Thursday,21,Medium
+Multan,Bosan Road,Theft,Morning,Friday,61,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Lahore,Johar Town,Vandalism,Afternoon,Friday,20,Medium
+Multan,Bosan Road,Theft,Morning,Thursday,61,Medium
+Karachi,Defence,Vandalism,Afternoon,Thursday,94,Medium
+Islamabad,G-10,Theft,Morning,Monday,52,Medium
+Karachi,Saddar,Vandalism,Afternoon,Wednesday,138,Medium
+Islamabad,G-10,Theft,Morning,Friday,52,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Clifton,Theft,Morning,Wednesday,21,Medium
+Lahore,DHA,Assault,Morning,Wednesday,9,Medium
+Karachi,Defence,Assault,Morning,Wednesday,18,Medium
+Islamabad,G-10,Fraud,Afternoon,Saturday,20,Medium
+Lahore,Johar Town,Assault,Morning,Thursday,60,Medium
+Islamabad,G-10,Theft,Morning,Sunday,52,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Lahore,Johar Town,Theft,Morning,Sunday,60,Medium
+Lahore,Model Town,Vandalism,Afternoon,Thursday,9,Low
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Islamabad,F-7,Vandalism,Afternoon,Saturday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Sunday,138,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Multan,Bosan Road,Assault,Morning,Friday,61,Medium
+Karachi,Defence,Vandalism,Afternoon,Friday,94,Medium
+Karachi,Defence,Fraud,Morning,Sunday,18,Medium
+Lahore,Model Town,Assault,Afternoon,Thursday,9,Medium
+Lahore,Johar Town,Fraud,Morning,Monday,60,Medium
+Islamabad,F-7,Assault,Morning,Sunday,60,Medium
+Lahore,Johar Town,Assault,Morning,Sunday,60,Medium
+Multan,Gulgasht,Assault,Morning,Saturday,8,Medium
+Karachi,Defence,Vandalism,Afternoon,Tuesday,94,Medium
+Islamabad,F-7,Theft,Afternoon,Sunday,20,Medium
+Multan,Bosan Road,Theft,Afternoon,Monday,20,Medium
+Islamabad,F-8,Vandalism,Morning,Tuesday,7,Low
+Islamabad,F-7,Fraud,Morning,Sunday,60,Medium
+Multan,Hussain Agahi,Fraud,Morning,Thursday,50,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Sunday,50,Medium
+Lahore,Model Town,Fraud,Morning,Monday,9,Low
+Karachi,Clifton,Theft,Night,Thursday,139,Medium
+Karachi,Defence,Theft,Afternoon,Monday,94,Medium
+Karachi,Defence,Theft,Afternoon,Friday,94,Medium
+Karachi,Saddar,Vandalism,Morning,Wednesday,12,Low
+Multan,Hussain Agahi,Assault,Afternoon,Sunday,20,Medium
+Islamabad,G-10,Fraud,Night,Friday,20,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Islamabad,F-8,Theft,Morning,Saturday,7,Low
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Lahore,Johar Town,Fraud,Afternoon,Tuesday,20,Medium
+Karachi,Defence,Vandalism,Afternoon,Tuesday,94,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Multan,Hussain Agahi,Fraud,Morning,Monday,50,Medium
+Lahore,Johar Town,Assault,Night,Friday,20,High
+Islamabad,G-10,Fraud,Afternoon,Tuesday,20,Medium
+Lahore,Johar Town,Assault,Morning,Monday,60,Medium
+Multan,Bosan Road,Vandalism,Night,Tuesday,14,Medium
+Islamabad,F-7,Theft,Morning,Thursday,60,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Karachi,Clifton,Theft,Night,Friday,139,High
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Clifton,Vandalism,Afternoon,Monday,18,Medium
+Multan,Gulgasht,Assault,Morning,Friday,8,Medium
+Karachi,Saddar,Vandalism,Afternoon,Saturday,138,Medium
+Karachi,Defence,Theft,Night,Wednesday,13,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Lahore,Johar Town,Vandalism,Morning,Thursday,60,Medium
+Islamabad,G-10,Theft,Night,Saturday,20,Medium
+Islamabad,G-10,Vandalism,Morning,Friday,52,Medium
+Lahore,Johar Town,Fraud,Morning,Sunday,60,Medium
+Karachi,Saddar,Theft,Afternoon,Tuesday,138,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Islamabad,G-10,Vandalism,Night,Friday,20,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Multan,Hussain Agahi,Fraud,Morning,Wednesday,50,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Islamabad,F-8,Fraud,Morning,Wednesday,7,Low
+Islamabad,F-7,Vandalism,Morning,Thursday,60,Medium
+Islamabad,F-8,Vandalism,Morning,Monday,7,Low
+Karachi,Defence,Theft,Night,Friday,13,Medium
+Multan,Bosan Road,Theft,Morning,Monday,61,Medium
+Karachi,Saddar,Assault,Afternoon,Sunday,138,High
+Lahore,Johar Town,Assault,Afternoon,Thursday,20,Medium
+Karachi,Clifton,Fraud,Afternoon,Saturday,18,Medium
+Karachi,Clifton,Fraud,Afternoon,Tuesday,18,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Multan,Hussain Agahi,Fraud,Night,Monday,20,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Tuesday,50,Medium
+Karachi,Saddar,Vandalism,Afternoon,Thursday,138,Medium
+Karachi,Defence,Fraud,Afternoon,Tuesday,94,Medium
+Islamabad,G-10,Theft,Morning,Wednesday,52,Medium
+Multan,Bosan Road,Assault,Morning,Tuesday,61,Medium
+Islamabad,F-7,Assault,Afternoon,Wednesday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Karachi,Saddar,Theft,Afternoon,Saturday,138,Medium
+Multan,Bosan Road,Theft,Morning,Monday,61,Medium
+Multan,Gulgasht,Theft,Morning,Tuesday,8,Low
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Defence,Theft,Night,Thursday,13,Medium
+Lahore,Johar Town,Fraud,Morning,Tuesday,60,Medium
+Karachi,Saddar,Fraud,Afternoon,Tuesday,138,Medium
+Multan,Hussain Agahi,Theft,Morning,Friday,50,Medium
+Lahore,Johar Town,Fraud,Afternoon,Sunday,20,Medium
+Karachi,Saddar,Theft,Night,Monday,17,Medium
+Multan,Bosan Road,Vandalism,Morning,Tuesday,61,Medium
+Karachi,Saddar,Assault,Afternoon,Friday,138,High
+Islamabad,G-10,Vandalism,Morning,Friday,52,Medium
+Multan,Hussain Agahi,Fraud,Morning,Thursday,50,Medium
+Islamabad,F-7,Fraud,Morning,Friday,60,Medium
+Islamabad,F-7,Vandalism,Morning,Thursday,60,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Defence,Assault,Night,Thursday,13,Medium
+Lahore,Johar Town,Theft,Morning,Saturday,60,Medium
+Karachi,Saddar,Fraud,Night,Friday,17,Medium
+Karachi,Defence,Vandalism,Afternoon,Wednesday,94,Medium
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Karachi,Saddar,Assault,Afternoon,Saturday,138,High
+Lahore,Johar Town,Assault,Morning,Tuesday,60,Medium
+Islamabad,F-7,Theft,Morning,Friday,60,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Sunday,20,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Defence,Vandalism,Morning,Tuesday,18,Low
+Lahore,Johar Town,Theft,Morning,Sunday,60,Medium
+Lahore,Johar Town,Theft,Morning,Friday,60,Medium
+Islamabad,G-10,Theft,Afternoon,Thursday,20,Medium
+Multan,Bosan Road,Vandalism,Night,Wednesday,14,Medium
+Lahore,Johar Town,Fraud,Morning,Sunday,60,Medium
+Islamabad,F-7,Theft,Night,Wednesday,20,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Monday,50,Medium
+Karachi,Saddar,Vandalism,Night,Saturday,17,Medium
+Lahore,Johar Town,Assault,Morning,Monday,60,Medium
+Islamabad,F-7,Vandalism,Morning,Thursday,60,Medium
+Multan,Bosan Road,Vandalism,Afternoon,Saturday,20,Medium
+Islamabad,G-10,Vandalism,Afternoon,Tuesday,20,Medium
+Multan,Gulgasht,Vandalism,Morning,Monday,8,Low
+Karachi,Saddar,Fraud,Afternoon,Saturday,138,Medium
+Karachi,Saddar,Vandalism,Afternoon,Sunday,138,Medium
+Lahore,DHA,Vandalism,Morning,Sunday,9,Low
+Karachi,Clifton,Fraud,Morning,Thursday,21,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Lahore,Johar Town,Assault,Morning,Tuesday,60,Medium
+Islamabad,F-7,Vandalism,Night,Friday,20,Medium
+Multan,Hussain Agahi,Theft,Morning,Sunday,50,Medium
+Islamabad,G-10,Fraud,Morning,Sunday,52,Medium
+Islamabad,G-10,Assault,Night,Tuesday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Thursday,138,Medium
+Karachi,Defence,Assault,Afternoon,Sunday,94,High
+Islamabad,F-7,Assault,Morning,Sunday,60,Medium
+Karachi,Defence,Fraud,Afternoon,Saturday,94,Medium
+Karachi,Defence,Fraud,Afternoon,Thursday,94,Medium
+Islamabad,G-10,Fraud,Morning,Thursday,52,Medium
+Karachi,Clifton,Vandalism,Afternoon,Sunday,18,Medium
+Karachi,Saddar,Fraud,Morning,Sunday,12,Medium
+Lahore,Johar Town,Vandalism,Night,Friday,20,Medium
+Islamabad,F-7,Theft,Night,Friday,20,Medium
+Multan,Hussain Agahi,Vandalism,Night,Saturday,20,Medium
+Islamabad,G-10,Assault,Afternoon,Saturday,20,Medium
+Lahore,DHA,Fraud,Afternoon,Monday,9,Medium
+Karachi,Saddar,Fraud,Afternoon,Saturday,138,Medium
+Lahore,Johar Town,Theft,Night,Friday,20,Medium
+Karachi,Clifton,Assault,Morning,Saturday,21,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Saturday,20,Medium
+Karachi,Clifton,Assault,Night,Thursday,139,High
+Multan,Bosan Road,Vandalism,Morning,Saturday,61,Medium
+Karachi,Clifton,Fraud,Morning,Tuesday,21,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Friday,50,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Lahore,Johar Town,Theft,Morning,Thursday,60,Medium
+Multan,Hussain Agahi,Assault,Morning,Thursday,50,Medium
+Islamabad,G-10,Theft,Morning,Tuesday,52,Medium
+Multan,Bosan Road,Assault,Morning,Wednesday,61,Medium
+Karachi,Saddar,Assault,Afternoon,Monday,138,High
+Multan,Bosan Road,Vandalism,Afternoon,Thursday,20,Medium
+Karachi,Clifton,Theft,Afternoon,Sunday,18,Medium
+Multan,Hussain Agahi,Assault,Morning,Friday,50,Medium
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Karachi,Saddar,Theft,Afternoon,Monday,138,Medium
+Islamabad,F-7,Assault,Morning,Saturday,60,Medium
+Islamabad,G-10,Theft,Morning,Sunday,52,Medium
+Lahore,Johar Town,Fraud,Morning,Monday,60,Medium
+Lahore,Johar Town,Vandalism,Night,Friday,20,Medium
+Multan,Bosan Road,Fraud,Morning,Thursday,61,Medium
+Multan,Bosan Road,Theft,Morning,Friday,61,Medium
+Karachi,Defence,Vandalism,Night,Saturday,13,Medium
+Lahore,Johar Town,Fraud,Morning,Wednesday,60,Medium
+Islamabad,F-7,Vandalism,Afternoon,Monday,20,Medium
+Islamabad,F-7,Assault,Morning,Wednesday,60,Medium
+Multan,Hussain Agahi,Fraud,Night,Saturday,20,Medium
+Lahore,Johar Town,Theft,Morning,Tuesday,60,Medium
+Karachi,Defence,Fraud,Afternoon,Friday,94,Medium
+Karachi,Defence,Vandalism,Morning,Monday,18,Low
+Islamabad,F-7,Fraud,Night,Saturday,20,Medium
+Multan,Hussain Agahi,Theft,Night,Monday,20,Medium
+Karachi,Defence,Theft,Morning,Monday,18,Medium
+Multan,Bosan Road,Theft,Morning,Tuesday,61,Medium
+Islamabad,F-7,Assault,Morning,Tuesday,60,Medium
+Karachi,Saddar,Assault,Afternoon,Sunday,138,High
+Karachi,Clifton,Theft,Morning,Saturday,21,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Karachi,Clifton,Theft,Afternoon,Monday,18,Medium
+Karachi,Saddar,Assault,Afternoon,Thursday,138,High
+Multan,Bosan Road,Vandalism,Afternoon,Sunday,20,Medium
+Multan,Hussain Agahi,Fraud,Morning,Wednesday,50,Medium
+Karachi,Defence,Assault,Afternoon,Monday,94,High
+Karachi,Defence,Assault,Afternoon,Tuesday,94,High
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Lahore,Johar Town,Vandalism,Night,Friday,20,Medium
+Karachi,Saddar,Vandalism,Morning,Saturday,12,Low
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Saddar,Fraud,Morning,Wednesday,12,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Defence,Theft,Morning,Wednesday,18,Medium
+Lahore,Johar Town,Vandalism,Afternoon,Friday,20,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Saddar,Vandalism,Afternoon,Tuesday,138,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Islamabad,F-7,Assault,Morning,Saturday,60,Medium
+Karachi,Saddar,Assault,Afternoon,Friday,138,High
+Karachi,Defence,Assault,Afternoon,Thursday,94,High
+Islamabad,G-10,Assault,Morning,Friday,52,Medium
+Karachi,Defence,Fraud,Afternoon,Saturday,94,Medium
+Multan,Hussain Agahi,Theft,Night,Tuesday,20,Medium
+Multan,Hussain Agahi,Theft,Morning,Monday,50,Medium
+Lahore,DHA,Fraud,Morning,Thursday,9,Low
+Karachi,Clifton,Theft,Night,Friday,139,High
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Defence,Assault,Afternoon,Sunday,94,High
+Karachi,Clifton,Theft,Night,Friday,139,High
+Karachi,Saddar,Assault,Afternoon,Friday,138,High
+Karachi,Defence,Vandalism,Morning,Monday,18,Low
+Islamabad,F-7,Vandalism,Afternoon,Tuesday,20,Medium
+Lahore,DHA,Fraud,Afternoon,Monday,9,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Karachi,Defence,Assault,Afternoon,Saturday,94,High
+Islamabad,F-7,Vandalism,Afternoon,Friday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Saturday,138,Medium
+Lahore,Johar Town,Vandalism,Morning,Sunday,60,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Defence,Theft,Night,Tuesday,13,Medium
+Multan,Bosan Road,Fraud,Afternoon,Thursday,20,Medium
+Karachi,Defence,Theft,Afternoon,Monday,94,Medium
+Karachi,Saddar,Theft,Afternoon,Tuesday,138,Medium
+Karachi,Defence,Assault,Morning,Sunday,18,Medium
+Islamabad,F-7,Assault,Night,Thursday,20,Medium
+Islamabad,G-10,Fraud,Morning,Wednesday,52,Medium
+Multan,Hussain Agahi,Theft,Morning,Monday,50,Medium
+Karachi,Clifton,Fraud,Night,Monday,139,Medium
+Multan,Bosan Road,Fraud,Morning,Tuesday,61,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Monday,50,Medium
+Karachi,Saddar,Fraud,Afternoon,Wednesday,138,Medium
+Islamabad,F-7,Vandalism,Morning,Tuesday,60,Medium
+Karachi,Saddar,Vandalism,Afternoon,Saturday,138,Medium
+Lahore,Model Town,Fraud,Morning,Tuesday,9,Low
+Multan,Bosan Road,Vandalism,Morning,Friday,61,Medium
+Islamabad,G-10,Theft,Morning,Saturday,52,Medium
+Karachi,Clifton,Theft,Afternoon,Monday,18,Medium
+Lahore,DHA,Assault,Afternoon,Wednesday,9,Medium
+Islamabad,F-7,Vandalism,Afternoon,Wednesday,20,Medium
+Karachi,Saddar,Vandalism,Afternoon,Monday,138,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Defence,Fraud,Afternoon,Wednesday,94,Medium
+Lahore,Johar Town,Fraud,Morning,Monday,60,Medium
+Lahore,Johar Town,Assault,Morning,Saturday,60,Medium
+Lahore,Johar Town,Assault,Afternoon,Sunday,20,Medium
+Karachi,Defence,Theft,Afternoon,Saturday,94,Medium
+Karachi,Saddar,Assault,Afternoon,Thursday,138,High
+Islamabad,F-7,Vandalism,Morning,Monday,60,Medium
+Islamabad,G-10,Fraud,Afternoon,Friday,20,Medium
+Islamabad,G-10,Fraud,Morning,Thursday,52,Medium
+Multan,Hussain Agahi,Vandalism,Night,Saturday,20,Medium
+Karachi,Saddar,Assault,Afternoon,Tuesday,138,High
+Karachi,Defence,Fraud,Morning,Saturday,18,Medium
+Karachi,Defence,Theft,Afternoon,Monday,94,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Multan,Hussain Agahi,Fraud,Afternoon,Saturday,20,Medium
+Islamabad,G-10,Theft,Night,Saturday,20,Medium
+Karachi,Defence,Theft,Morning,Friday,18,Medium
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Multan,Hussain Agahi,Vandalism,Night,Saturday,20,Medium
+Multan,Hussain Agahi,Assault,Morning,Monday,50,Medium
+Karachi,Saddar,Assault,Afternoon,Friday,138,High
+Multan,Bosan Road,Fraud,Afternoon,Wednesday,20,Medium
+Islamabad,F-7,Theft,Morning,Thursday,60,Medium
+Multan,Bosan Road,Fraud,Morning,Friday,61,Medium
+Islamabad,F-7,Fraud,Morning,Tuesday,60,Medium
+Islamabad,F-7,Assault,Night,Monday,20,Medium
+Karachi,Saddar,Assault,Afternoon,Thursday,138,High
+Lahore,Model Town,Theft,Morning,Tuesday,9,Low
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Saddar,Assault,Night,Tuesday,17,Medium
+Multan,Bosan Road,Vandalism,Morning,Thursday,61,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Clifton,Theft,Afternoon,Monday,18,Medium
+Islamabad,F-7,Theft,Night,Tuesday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Tuesday,138,Medium
+Lahore,Johar Town,Fraud,Morning,Monday,60,Medium
+Karachi,Saddar,Assault,Afternoon,Friday,138,High
+Karachi,Clifton,Theft,Night,Friday,139,High
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Multan,Hussain Agahi,Fraud,Morning,Monday,50,Medium
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Karachi,Saddar,Fraud,Night,Saturday,17,Medium
+Karachi,Saddar,Vandalism,Afternoon,Sunday,138,Medium
+Karachi,Saddar,Fraud,Afternoon,Monday,138,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Lahore,Johar Town,Vandalism,Night,Thursday,20,Medium
+Lahore,Johar Town,Assault,Morning,Thursday,60,Medium
+Islamabad,G-10,Fraud,Morning,Friday,52,Medium
+Islamabad,F-7,Assault,Morning,Saturday,60,Medium
+Lahore,Johar Town,Theft,Morning,Tuesday,60,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Karachi,Defence,Assault,Afternoon,Saturday,94,High
+Multan,Hussain Agahi,Assault,Morning,Saturday,50,Medium
+Islamabad,G-10,Theft,Afternoon,Thursday,20,Medium
+Islamabad,F-7,Assault,Afternoon,Tuesday,20,Medium
+Multan,Hussain Agahi,Assault,Morning,Saturday,50,Medium
+Karachi,Saddar,Fraud,Afternoon,Thursday,138,Medium
+Multan,Bosan Road,Fraud,Morning,Monday,61,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Monday,20,Medium
+Islamabad,G-10,Vandalism,Morning,Monday,52,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Clifton,Fraud,Afternoon,Tuesday,18,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Monday,50,Medium
+Islamabad,G-10,Theft,Afternoon,Saturday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Islamabad,G-10,Fraud,Morning,Sunday,52,Medium
+Multan,Bosan Road,Assault,Morning,Sunday,61,Medium
+Islamabad,G-10,Vandalism,Night,Saturday,20,Medium
+Karachi,Clifton,Theft,Night,Friday,139,High
+Multan,Hussain Agahi,Assault,Night,Tuesday,20,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Islamabad,G-10,Vandalism,Morning,Wednesday,52,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Multan,Bosan Road,Theft,Night,Thursday,14,Medium
+Multan,Hussain Agahi,Vandalism,Night,Monday,20,Medium
+Islamabad,F-7,Assault,Morning,Tuesday,60,Medium
+Multan,Bosan Road,Assault,Afternoon,Saturday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Friday,138,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Monday,20,Medium
+Multan,Hussain Agahi,Fraud,Morning,Sunday,50,Medium
+Islamabad,G-10,Vandalism,Morning,Friday,52,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Karachi,Saddar,Theft,Afternoon,Tuesday,138,Medium
+Karachi,Saddar,Vandalism,Night,Saturday,17,Medium
+Karachi,Saddar,Fraud,Afternoon,Sunday,138,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Defence,Fraud,Afternoon,Monday,94,Medium
+Multan,Bosan Road,Theft,Night,Saturday,14,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Clifton,Theft,Night,Wednesday,139,Medium
+Karachi,Saddar,Fraud,Afternoon,Thursday,138,Medium
+Multan,Bosan Road,Theft,Morning,Sunday,61,Medium
+Lahore,Johar Town,Vandalism,Morning,Thursday,60,Medium
+Multan,Bosan Road,Fraud,Afternoon,Sunday,20,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Multan,Bosan Road,Assault,Morning,Wednesday,61,Medium
+Islamabad,F-7,Assault,Afternoon,Sunday,20,Medium
+Karachi,Defence,Fraud,Afternoon,Wednesday,94,Medium
+Islamabad,F-7,Theft,Morning,Wednesday,60,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Clifton,Vandalism,Morning,Tuesday,21,Medium
+Karachi,Saddar,Vandalism,Afternoon,Tuesday,138,Medium
+Karachi,Saddar,Fraud,Afternoon,Saturday,138,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Islamabad,F-7,Assault,Morning,Friday,60,Medium
+Islamabad,F-7,Fraud,Morning,Saturday,60,Medium
+Multan,Bosan Road,Theft,Afternoon,Thursday,20,Medium
+Multan,Hussain Agahi,Fraud,Morning,Friday,50,Medium
+Multan,Bosan Road,Fraud,Morning,Monday,61,Medium
+Multan,Bosan Road,Theft,Morning,Sunday,61,Medium
+Lahore,DHA,Fraud,Afternoon,Tuesday,9,Medium
+Multan,Bosan Road,Theft,Afternoon,Friday,20,Medium
+Islamabad,F-7,Fraud,Morning,Sunday,60,Medium
+Lahore,Johar Town,Assault,Morning,Thursday,60,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Multan,Bosan Road,Theft,Morning,Saturday,61,Medium
+Islamabad,F-7,Assault,Night,Friday,20,High
+Islamabad,F-7,Vandalism,Night,Friday,20,Medium
+Islamabad,F-7,Vandalism,Morning,Thursday,60,Medium
+Islamabad,F-7,Assault,Morning,Saturday,60,Medium
+Multan,Gulgasht,Assault,Morning,Saturday,8,Medium
+Karachi,Saddar,Vandalism,Afternoon,Monday,138,Medium
+Lahore,Model Town,Fraud,Morning,Monday,9,Low
+Multan,Hussain Agahi,Theft,Morning,Saturday,50,Medium
+Karachi,Saddar,Vandalism,Afternoon,Saturday,138,Medium
+Karachi,Defence,Fraud,Night,Tuesday,13,Medium
+Multan,Hussain Agahi,Theft,Morning,Friday,50,Medium
+Islamabad,G-10,Theft,Night,Friday,20,Medium
+Karachi,Defence,Fraud,Night,Tuesday,13,Medium
+Karachi,Saddar,Fraud,Afternoon,Wednesday,138,Medium
+Karachi,Saddar,Theft,Morning,Thursday,12,Medium
+Islamabad,F-7,Fraud,Night,Saturday,20,Medium
+Lahore,Johar Town,Assault,Night,Wednesday,20,Medium
+Multan,Hussain Agahi,Theft,Afternoon,Sunday,20,Medium
+Lahore,Johar Town,Fraud,Afternoon,Saturday,20,Medium
+Lahore,DHA,Theft,Morning,Tuesday,9,Low
+Karachi,Saddar,Vandalism,Afternoon,Saturday,138,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Saddar,Theft,Morning,Tuesday,12,Medium
+Karachi,Clifton,Fraud,Morning,Tuesday,21,Medium
+Karachi,Defence,Vandalism,Afternoon,Tuesday,94,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Clifton,Theft,Night,Friday,139,High
+Karachi,Clifton,Theft,Night,Friday,139,High
+Islamabad,F-7,Assault,Morning,Friday,60,Medium
+Islamabad,F-7,Fraud,Night,Tuesday,20,Medium
+Multan,Bosan Road,Assault,Afternoon,Friday,20,Medium
+Islamabad,G-10,Vandalism,Afternoon,Monday,20,Medium
+Multan,Bosan Road,Vandalism,Morning,Sunday,61,Medium
+Karachi,Defence,Assault,Afternoon,Sunday,94,High
+Karachi,Saddar,Assault,Afternoon,Tuesday,138,High
+Islamabad,F-7,Assault,Afternoon,Monday,20,Medium
+Islamabad,F-7,Theft,Morning,Saturday,60,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Monday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Friday,138,Medium
+Karachi,Saddar,Assault,Afternoon,Saturday,138,High
+Multan,Hussain Agahi,Fraud,Afternoon,Sunday,20,Medium
+Islamabad,G-10,Assault,Morning,Tuesday,52,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Islamabad,G-10,Fraud,Morning,Friday,52,Medium
+Karachi,Clifton,Theft,Afternoon,Thursday,18,Medium
+Lahore,Johar Town,Assault,Morning,Friday,60,Medium
+Islamabad,F-7,Assault,Morning,Thursday,60,Medium
+Islamabad,F-7,Vandalism,Morning,Wednesday,60,Medium
+Karachi,Saddar,Fraud,Afternoon,Monday,138,Medium
+Multan,Bosan Road,Fraud,Night,Thursday,14,Medium
+Karachi,Defence,Theft,Afternoon,Saturday,94,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Karachi,Saddar,Assault,Afternoon,Sunday,138,High
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Multan,Bosan Road,Fraud,Morning,Sunday,61,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Lahore,Johar Town,Vandalism,Night,Wednesday,20,Medium
+Islamabad,G-10,Theft,Night,Tuesday,20,Medium
+Islamabad,F-8,Assault,Morning,Saturday,7,Medium
+Lahore,Model Town,Vandalism,Afternoon,Saturday,9,Low
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Saddar,Assault,Afternoon,Monday,138,High
+Karachi,Defence,Theft,Afternoon,Tuesday,94,Medium
+Karachi,Defence,Fraud,Afternoon,Monday,94,Medium
+Karachi,Defence,Fraud,Afternoon,Monday,94,Medium
+Lahore,Model Town,Theft,Morning,Monday,9,Low
+Lahore,Johar Town,Vandalism,Night,Wednesday,20,Medium
+Karachi,Defence,Theft,Afternoon,Tuesday,94,Medium
+Karachi,Clifton,Fraud,Night,Thursday,139,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Multan,Hussain Agahi,Fraud,Morning,Sunday,50,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Lahore,Model Town,Vandalism,Afternoon,Saturday,9,Low
+Islamabad,F-7,Vandalism,Afternoon,Monday,20,Medium
+Multan,Hussain Agahi,Assault,Morning,Sunday,50,Medium
+Karachi,Defence,Assault,Afternoon,Monday,94,High
+Karachi,Clifton,Theft,Afternoon,Sunday,18,Medium
+Karachi,Defence,Theft,Afternoon,Thursday,94,Medium
+Lahore,Johar Town,Theft,Morning,Monday,60,Medium
+Islamabad,F-7,Fraud,Afternoon,Thursday,20,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Lahore,Johar Town,Theft,Morning,Thursday,60,Medium
+Islamabad,G-10,Theft,Morning,Wednesday,52,Medium
+Karachi,Clifton,Vandalism,Afternoon,Friday,18,Medium
+Multan,Bosan Road,Assault,Morning,Monday,61,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Saturday,50,Medium
+Islamabad,G-10,Assault,Morning,Saturday,52,Medium
+Karachi,Saddar,Vandalism,Afternoon,Wednesday,138,Medium
+Lahore,Johar Town,Assault,Morning,Saturday,60,Medium
+Lahore,Johar Town,Vandalism,Night,Monday,20,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Islamabad,G-10,Vandalism,Morning,Tuesday,52,Medium
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Multan,Bosan Road,Vandalism,Morning,Friday,61,Medium
+Karachi,Saddar,Fraud,Afternoon,Sunday,138,Medium
+Islamabad,G-10,Assault,Morning,Friday,52,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Islamabad,G-10,Vandalism,Morning,Wednesday,52,Medium
+Islamabad,F-7,Assault,Morning,Thursday,60,Medium
+Karachi,Clifton,Theft,Night,Friday,139,High
+Islamabad,G-10,Assault,Morning,Friday,52,Medium
+Karachi,Saddar,Fraud,Afternoon,Wednesday,138,Medium
+Islamabad,F-7,Fraud,Morning,Monday,60,Medium
+Karachi,Defence,Assault,Afternoon,Sunday,94,High
+Karachi,Clifton,Assault,Night,Friday,139,High
+Lahore,Johar Town,Vandalism,Afternoon,Sunday,20,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Friday,20,Medium
+Multan,Bosan Road,Assault,Afternoon,Friday,20,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Islamabad,F-7,Vandalism,Night,Wednesday,20,Medium
+Islamabad,F-8,Vandalism,Morning,Tuesday,7,Low
+Islamabad,G-10,Fraud,Morning,Thursday,52,Medium
+Islamabad,F-7,Assault,Morning,Thursday,60,Medium
+Karachi,Saddar,Vandalism,Afternoon,Tuesday,138,Medium
+Karachi,Saddar,Theft,Afternoon,Saturday,138,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Multan,Hussain Agahi,Vandalism,Morning,Sunday,50,Medium
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Multan,Bosan Road,Theft,Morning,Thursday,61,Medium
+Karachi,Saddar,Vandalism,Afternoon,Thursday,138,Medium
+Multan,Hussain Agahi,Theft,Morning,Tuesday,50,Medium
+Islamabad,F-7,Fraud,Morning,Sunday,60,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Islamabad,G-10,Theft,Morning,Tuesday,52,Medium
+Multan,Hussain Agahi,Assault,Morning,Saturday,50,Medium
+Karachi,Defence,Assault,Morning,Friday,18,Medium
+Karachi,Saddar,Vandalism,Afternoon,Friday,138,Medium
+Karachi,Saddar,Fraud,Afternoon,Friday,138,Medium
+Karachi,Saddar,Vandalism,Night,Saturday,17,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Lahore,Johar Town,Assault,Morning,Thursday,60,Medium
+Islamabad,G-10,Fraud,Night,Monday,20,Medium
+Karachi,Clifton,Vandalism,Morning,Tuesday,21,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Friday,50,Medium
+Karachi,Clifton,Vandalism,Morning,Wednesday,21,Medium
+Lahore,Johar Town,Assault,Morning,Wednesday,60,Medium
+Lahore,DHA,Theft,Night,Wednesday,2,Medium
+Multan,Bosan Road,Assault,Night,Friday,14,High
+Islamabad,G-10,Vandalism,Morning,Wednesday,52,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Saddar,Fraud,Afternoon,Monday,138,Medium
+Islamabad,G-10,Assault,Afternoon,Sunday,20,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Monday,50,Medium
+Islamabad,F-7,Fraud,Morning,Tuesday,60,Medium
+Karachi,Saddar,Assault,Afternoon,Tuesday,138,High
+Islamabad,G-10,Theft,Morning,Thursday,52,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Islamabad,G-10,Fraud,Afternoon,Tuesday,20,Medium
+Multan,Bosan Road,Theft,Morning,Thursday,61,Medium
+Islamabad,G-10,Assault,Afternoon,Monday,20,Medium
+Islamabad,G-10,Fraud,Morning,Wednesday,52,Medium
+Karachi,Saddar,Assault,Afternoon,Thursday,138,High
+Multan,Hussain Agahi,Vandalism,Afternoon,Friday,20,Medium
+Lahore,Johar Town,Vandalism,Night,Saturday,20,Medium
+Lahore,Johar Town,Assault,Night,Monday,20,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Clifton,Theft,Morning,Thursday,21,Medium
+Karachi,Clifton,Vandalism,Night,Monday,139,Medium
+Islamabad,F-7,Theft,Morning,Monday,60,Medium
+Multan,Bosan Road,Theft,Morning,Saturday,61,Medium
+Multan,Hussain Agahi,Assault,Morning,Tuesday,50,Medium
+Islamabad,G-10,Theft,Afternoon,Saturday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Tuesday,138,Medium
+Multan,Bosan Road,Theft,Morning,Tuesday,61,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Islamabad,G-10,Assault,Night,Friday,20,High
+Multan,Bosan Road,Assault,Morning,Monday,61,Medium
+Karachi,Saddar,Vandalism,Afternoon,Monday,138,Medium
+Multan,Bosan Road,Theft,Morning,Thursday,61,Medium
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Karachi,Defence,Theft,Afternoon,Thursday,94,Medium
+Islamabad,F-7,Vandalism,Morning,Friday,60,Medium
+Karachi,Saddar,Fraud,Morning,Friday,12,Medium
+Islamabad,F-7,Vandalism,Afternoon,Monday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Friday,138,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Multan,Bosan Road,Fraud,Morning,Thursday,61,Medium
+Lahore,Johar Town,Fraud,Morning,Monday,60,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Multan,Hussain Agahi,Theft,Night,Friday,20,Medium
+Karachi,Defence,Theft,Afternoon,Sunday,94,Medium
+Karachi,Saddar,Vandalism,Afternoon,Wednesday,138,Medium
+Karachi,Saddar,Vandalism,Afternoon,Monday,138,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Islamabad,F-7,Vandalism,Night,Friday,20,Medium
+Islamabad,F-7,Fraud,Morning,Wednesday,60,Medium
+Karachi,Saddar,Vandalism,Afternoon,Thursday,138,Medium
+Karachi,Defence,Fraud,Afternoon,Monday,94,Medium
+Multan,Hussain Agahi,Assault,Afternoon,Saturday,20,Medium
+Karachi,Defence,Vandalism,Afternoon,Tuesday,94,Medium
+Multan,Hussain Agahi,Assault,Morning,Saturday,50,Medium
+Karachi,Saddar,Fraud,Afternoon,Wednesday,138,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Defence,Theft,Afternoon,Sunday,94,Medium
+Lahore,Johar Town,Fraud,Night,Friday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Monday,138,Medium
+Multan,Bosan Road,Vandalism,Night,Friday,14,Medium
+Multan,Bosan Road,Assault,Morning,Tuesday,61,Medium
+Lahore,Johar Town,Vandalism,Morning,Wednesday,60,Medium
+Karachi,Saddar,Fraud,Afternoon,Monday,138,Medium
+Lahore,Model Town,Theft,Afternoon,Tuesday,9,Medium
+Karachi,Defence,Assault,Morning,Wednesday,18,Medium
+Lahore,Johar Town,Assault,Morning,Tuesday,60,Medium
+Multan,Hussain Agahi,Fraud,Morning,Friday,50,Medium
+Lahore,Johar Town,Assault,Morning,Sunday,60,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Defence,Vandalism,Morning,Friday,18,Low
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Lahore,Johar Town,Theft,Morning,Thursday,60,Medium
+Multan,Bosan Road,Vandalism,Morning,Saturday,61,Medium
+Multan,Bosan Road,Vandalism,Morning,Wednesday,61,Medium
+Islamabad,F-7,Vandalism,Morning,Saturday,60,Medium
+Islamabad,G-10,Assault,Night,Wednesday,20,Medium
+Lahore,Johar Town,Vandalism,Morning,Sunday,60,Medium
+Islamabad,G-10,Fraud,Morning,Tuesday,52,Medium
+Multan,Bosan Road,Theft,Morning,Tuesday,61,Medium
+Lahore,Johar Town,Theft,Morning,Thursday,60,Medium
+Multan,Hussain Agahi,Vandalism,Afternoon,Wednesday,20,Medium
+Multan,Bosan Road,Assault,Morning,Friday,61,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Multan,Bosan Road,Vandalism,Morning,Sunday,61,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Lahore,DHA,Fraud,Night,Wednesday,2,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Defence,Assault,Afternoon,Thursday,94,High
+Lahore,Model Town,Theft,Morning,Monday,9,Low
+Multan,Hussain Agahi,Assault,Morning,Tuesday,50,Medium
+Islamabad,F-7,Theft,Morning,Sunday,60,Medium
+Karachi,Clifton,Theft,Morning,Saturday,21,Medium
+Islamabad,G-10,Fraud,Night,Saturday,20,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Lahore,Model Town,Vandalism,Afternoon,Saturday,9,Low
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Multan,Bosan Road,Theft,Morning,Thursday,61,Medium
+Islamabad,F-7,Vandalism,Afternoon,Friday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Friday,138,Medium
+Karachi,Saddar,Assault,Afternoon,Monday,138,High
+Multan,Bosan Road,Theft,Night,Tuesday,14,Medium
+Lahore,Johar Town,Vandalism,Afternoon,Friday,20,Medium
+Multan,Hussain Agahi,Assault,Night,Friday,20,High
+Islamabad,F-8,Assault,Morning,Monday,7,Medium
+Islamabad,F-7,Fraud,Morning,Friday,60,Medium
+Lahore,Johar Town,Theft,Afternoon,Thursday,20,Medium
+Karachi,Clifton,Theft,Afternoon,Sunday,18,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Saddar,Assault,Night,Monday,17,Medium
+Karachi,Saddar,Assault,Morning,Thursday,12,Medium
+Islamabad,F-7,Assault,Morning,Sunday,60,Medium
+Karachi,Defence,Vandalism,Night,Tuesday,13,Medium
+Islamabad,F-7,Theft,Morning,Saturday,60,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Defence,Fraud,Night,Wednesday,13,Medium
+Islamabad,F-7,Vandalism,Morning,Sunday,60,Medium
+Multan,Bosan Road,Fraud,Night,Tuesday,14,Medium
+Islamabad,F-7,Assault,Morning,Sunday,60,Medium
+Karachi,Clifton,Fraud,Morning,Friday,21,Medium
+Islamabad,G-10,Vandalism,Afternoon,Thursday,20,Medium
+Lahore,DHA,Vandalism,Afternoon,Monday,9,Low
+Lahore,Model Town,Assault,Morning,Friday,9,Medium
+Islamabad,F-7,Vandalism,Morning,Tuesday,60,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Karachi,Defence,Theft,Afternoon,Sunday,94,Medium
+Karachi,Saddar,Theft,Morning,Saturday,12,Medium
+Karachi,Defence,Vandalism,Afternoon,Sunday,94,Medium
+Islamabad,G-10,Theft,Afternoon,Saturday,20,Medium
+Islamabad,G-10,Fraud,Night,Friday,20,Medium
+Karachi,Saddar,Assault,Afternoon,Sunday,138,High
+Multan,Bosan Road,Assault,Afternoon,Tuesday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Wednesday,50,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Multan,Hussain Agahi,Assault,Morning,Thursday,50,Medium
+Karachi,Saddar,Theft,Afternoon,Thursday,138,Medium
+Karachi,Defence,Vandalism,Afternoon,Sunday,94,Medium
+Islamabad,F-7,Assault,Afternoon,Tuesday,20,Medium
+Islamabad,G-10,Theft,Morning,Wednesday,52,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Karachi,Defence,Theft,Afternoon,Monday,94,Medium
+Karachi,Saddar,Vandalism,Afternoon,Friday,138,Medium
+Islamabad,G-10,Fraud,Morning,Wednesday,52,Medium
+Karachi,Saddar,Vandalism,Night,Tuesday,17,Medium
+Multan,Bosan Road,Vandalism,Morning,Friday,61,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Karachi,Saddar,Fraud,Morning,Monday,12,Medium
+Karachi,Saddar,Vandalism,Night,Friday,17,Medium
+Karachi,Clifton,Assault,Morning,Friday,21,Medium
+Lahore,Model Town,Vandalism,Night,Wednesday,1,Low
+Multan,Hussain Agahi,Assault,Morning,Monday,50,Medium
+Karachi,Saddar,Fraud,Afternoon,Friday,138,Medium
+Multan,Bosan Road,Assault,Afternoon,Sunday,20,Medium
+Karachi,Defence,Fraud,Night,Friday,13,Medium
+Lahore,Johar Town,Fraud,Night,Friday,20,Medium
+Islamabad,G-10,Fraud,Night,Thursday,20,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Multan,Bosan Road,Assault,Morning,Wednesday,61,Medium
+Karachi,Clifton,Theft,Night,Friday,139,High
+Karachi,Clifton,Vandalism,Afternoon,Thursday,18,Medium
+Multan,Bosan Road,Assault,Morning,Wednesday,61,Medium
+Islamabad,F-7,Vandalism,Night,Saturday,20,Medium
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Karachi,Saddar,Fraud,Afternoon,Saturday,138,Medium
+Karachi,Defence,Vandalism,Afternoon,Sunday,94,Medium
+Islamabad,G-10,Vandalism,Morning,Thursday,52,Medium
+Multan,Bosan Road,Vandalism,Night,Saturday,14,Medium
+Islamabad,G-10,Vandalism,Night,Saturday,20,Medium
+Lahore,Johar Town,Theft,Morning,Sunday,60,Medium
+Islamabad,F-7,Fraud,Afternoon,Sunday,20,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Saddar,Assault,Afternoon,Thursday,138,High
+Multan,Bosan Road,Theft,Afternoon,Wednesday,20,Medium
+Multan,Hussain Agahi,Assault,Night,Friday,20,High
+Lahore,Johar Town,Fraud,Night,Saturday,20,Medium
+Multan,Hussain Agahi,Fraud,Night,Saturday,20,Medium
+Lahore,DHA,Assault,Morning,Sunday,9,Medium
+Lahore,DHA,Assault,Afternoon,Sunday,9,Medium
+Lahore,Johar Town,Fraud,Morning,Saturday,60,Medium
+Multan,Bosan Road,Theft,Afternoon,Tuesday,20,Medium
+Multan,Bosan Road,Assault,Morning,Friday,61,Medium
+Karachi,Defence,Vandalism,Afternoon,Sunday,94,Medium
+Karachi,Clifton,Assault,Morning,Tuesday,21,Medium
+Karachi,Saddar,Theft,Afternoon,Sunday,138,Medium
+Islamabad,G-10,Assault,Night,Wednesday,20,Medium
+Lahore,Johar Town,Assault,Morning,Wednesday,60,Medium
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Friday,20,Medium
+Karachi,Defence,Theft,Afternoon,Tuesday,94,Medium
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Islamabad,G-10,Assault,Morning,Tuesday,52,Medium
+Islamabad,F-7,Assault,Morning,Wednesday,60,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Lahore,Model Town,Fraud,Afternoon,Tuesday,9,Medium
+Karachi,Defence,Fraud,Afternoon,Friday,94,Medium
+Lahore,Johar Town,Theft,Afternoon,Thursday,20,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Defence,Fraud,Afternoon,Friday,94,Medium
+Multan,Bosan Road,Theft,Morning,Sunday,61,Medium
+Islamabad,G-10,Vandalism,Morning,Saturday,52,Medium
+Karachi,Clifton,Assault,Afternoon,Monday,18,Medium
+Karachi,Clifton,Vandalism,Morning,Monday,21,Medium
+Islamabad,F-7,Vandalism,Morning,Wednesday,60,Medium
+Karachi,Clifton,Assault,Night,Monday,139,High
+Karachi,Saddar,Theft,Afternoon,Thursday,138,Medium
+Lahore,Model Town,Vandalism,Afternoon,Friday,9,Low
+Karachi,Defence,Fraud,Afternoon,Tuesday,94,Medium
+Islamabad,G-10,Fraud,Morning,Friday,52,Medium
+Multan,Bosan Road,Fraud,Morning,Tuesday,61,Medium
+Multan,Bosan Road,Assault,Night,Wednesday,14,Medium
+Islamabad,F-7,Fraud,Night,Friday,20,Medium
+Multan,Hussain Agahi,Vandalism,Afternoon,Thursday,20,Medium
+Multan,Gulgasht,Vandalism,Morning,Friday,8,Low
+Multan,Bosan Road,Vandalism,Afternoon,Friday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Tuesday,138,Medium
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Islamabad,F-7,Fraud,Night,Saturday,20,Medium
+Islamabad,F-7,Fraud,Morning,Wednesday,60,Medium
+Multan,Bosan Road,Assault,Afternoon,Sunday,20,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Saddar,Vandalism,Afternoon,Thursday,138,Medium
+Karachi,Defence,Vandalism,Afternoon,Monday,94,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Lahore,Johar Town,Theft,Afternoon,Tuesday,20,Medium
+Multan,Hussain Agahi,Assault,Night,Monday,20,Medium
+Lahore,Johar Town,Fraud,Afternoon,Wednesday,20,Medium
+Karachi,Saddar,Assault,Afternoon,Tuesday,138,High
+Multan,Bosan Road,Vandalism,Afternoon,Saturday,20,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Saddar,Theft,Afternoon,Saturday,138,Medium
+Lahore,Johar Town,Theft,Night,Saturday,20,Medium
+Karachi,Clifton,Vandalism,Night,Thursday,139,Medium
+Islamabad,F-7,Fraud,Morning,Friday,60,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Tuesday,20,Medium
+Lahore,Johar Town,Assault,Morning,Friday,60,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Defence,Theft,Afternoon,Wednesday,94,Medium
+Islamabad,G-10,Assault,Morning,Tuesday,52,Medium
+Islamabad,F-7,Vandalism,Morning,Saturday,60,Medium
+Lahore,Johar Town,Fraud,Morning,Friday,60,Medium
+Karachi,Defence,Vandalism,Afternoon,Sunday,94,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Multan,Bosan Road,Vandalism,Morning,Saturday,61,Medium
+Karachi,Saddar,Assault,Afternoon,Saturday,138,High
+Islamabad,G-10,Theft,Afternoon,Monday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Multan,Hussain Agahi,Assault,Morning,Monday,50,Medium
+Lahore,Johar Town,Fraud,Morning,Friday,60,Medium
+Multan,Bosan Road,Vandalism,Night,Tuesday,14,Medium
+Karachi,Saddar,Assault,Afternoon,Saturday,138,High
+Islamabad,G-10,Fraud,Morning,Tuesday,52,Medium
+Islamabad,F-7,Fraud,Morning,Sunday,60,Medium
+Lahore,DHA,Assault,Morning,Sunday,9,Medium
+Multan,Bosan Road,Assault,Night,Saturday,14,High
+Multan,Hussain Agahi,Fraud,Night,Friday,20,Medium
+Lahore,DHA,Theft,Morning,Saturday,9,Low
+Karachi,Defence,Theft,Afternoon,Monday,94,Medium
+Karachi,Defence,Vandalism,Afternoon,Sunday,94,Medium
+Lahore,Johar Town,Vandalism,Morning,Sunday,60,Medium
+Islamabad,G-10,Assault,Night,Tuesday,20,Medium
+Karachi,Defence,Fraud,Afternoon,Sunday,94,Medium
+Lahore,Johar Town,Fraud,Morning,Sunday,60,Medium
+Karachi,Defence,Assault,Afternoon,Thursday,94,High
+Karachi,Defence,Fraud,Afternoon,Thursday,94,Medium
+Karachi,Saddar,Theft,Afternoon,Thursday,138,Medium
+Karachi,Saddar,Fraud,Afternoon,Sunday,138,Medium
+Karachi,Saddar,Fraud,Afternoon,Tuesday,138,Medium
+Karachi,Defence,Assault,Afternoon,Friday,94,High
+Karachi,Clifton,Vandalism,Morning,Tuesday,21,Medium
+Multan,Hussain Agahi,Vandalism,Night,Friday,20,Medium
+Karachi,Defence,Fraud,Afternoon,Tuesday,94,Medium
+Karachi,Defence,Theft,Morning,Monday,18,Medium
+Karachi,Defence,Fraud,Afternoon,Friday,94,Medium
+Karachi,Saddar,Assault,Morning,Tuesday,12,Medium
+Islamabad,G-10,Assault,Morning,Saturday,52,Medium
+Karachi,Saddar,Vandalism,Afternoon,Tuesday,138,Medium
+Karachi,Defence,Fraud,Morning,Saturday,18,Medium
+Karachi,Saddar,Vandalism,Night,Monday,17,Medium
+Karachi,Saddar,Fraud,Afternoon,Sunday,138,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Multan,Hussain Agahi,Assault,Night,Friday,20,High
+Multan,Hussain Agahi,Assault,Morning,Sunday,50,Medium
+Lahore,Johar Town,Fraud,Morning,Friday,60,Medium
+Karachi,Saddar,Vandalism,Afternoon,Saturday,138,Medium
+Karachi,Defence,Assault,Afternoon,Saturday,94,High
+Lahore,DHA,Fraud,Afternoon,Thursday,9,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Saddar,Assault,Afternoon,Monday,138,High
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Multan,Gulgasht,Vandalism,Morning,Saturday,8,Low
+Lahore,Johar Town,Theft,Morning,Sunday,60,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Monday,20,Medium
+Multan,Bosan Road,Vandalism,Morning,Friday,61,Medium
+Karachi,Defence,Fraud,Afternoon,Tuesday,94,Medium
+Lahore,Model Town,Fraud,Morning,Friday,9,Low
+Karachi,Saddar,Fraud,Afternoon,Thursday,138,Medium
+Karachi,Saddar,Theft,Morning,Sunday,12,Medium
+Multan,Hussain Agahi,Theft,Morning,Friday,50,Medium
+Islamabad,F-7,Theft,Morning,Sunday,60,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Saddar,Fraud,Night,Wednesday,17,Medium
+Multan,Bosan Road,Theft,Morning,Monday,61,Medium
+Lahore,Johar Town,Theft,Morning,Monday,60,Medium
+Islamabad,G-10,Assault,Morning,Wednesday,52,Medium
+Karachi,Defence,Theft,Afternoon,Sunday,94,Medium
+Multan,Hussain Agahi,Fraud,Morning,Thursday,50,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Clifton,Theft,Afternoon,Thursday,18,Medium
+Karachi,Defence,Theft,Afternoon,Monday,94,Medium
+Karachi,Defence,Theft,Night,Thursday,13,Medium
+Multan,Bosan Road,Fraud,Morning,Thursday,61,Medium
+Karachi,Defence,Vandalism,Afternoon,Tuesday,94,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Islamabad,F-7,Fraud,Morning,Thursday,60,Medium
+Islamabad,G-10,Theft,Morning,Wednesday,52,Medium
+Multan,Bosan Road,Fraud,Morning,Saturday,61,Medium
+Multan,Hussain Agahi,Assault,Night,Tuesday,20,Medium
+Lahore,Johar Town,Theft,Night,Thursday,20,Medium
+Islamabad,F-7,Vandalism,Afternoon,Monday,20,Medium
+Karachi,Defence,Theft,Afternoon,Wednesday,94,Medium
+Lahore,Johar Town,Assault,Morning,Wednesday,60,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Lahore,Johar Town,Vandalism,Afternoon,Thursday,20,Medium
+Karachi,Saddar,Vandalism,Afternoon,Tuesday,138,Medium
+Multan,Gulgasht,Theft,Morning,Monday,8,Low
+Karachi,Defence,Fraud,Afternoon,Friday,94,Medium
+Karachi,Clifton,Vandalism,Night,Thursday,139,Medium
+Lahore,Johar Town,Assault,Afternoon,Sunday,20,Medium
+Karachi,Clifton,Fraud,Afternoon,Saturday,18,Medium
+Karachi,Defence,Fraud,Afternoon,Wednesday,94,Medium
+Lahore,Johar Town,Assault,Morning,Sunday,60,Medium
+Islamabad,F-7,Assault,Night,Monday,20,Medium
+Karachi,Saddar,Vandalism,Night,Monday,17,Medium
+Lahore,Johar Town,Fraud,Afternoon,Saturday,20,Medium
+Islamabad,F-7,Fraud,Morning,Monday,60,Medium
+Lahore,Johar Town,Theft,Night,Saturday,20,Medium
+Karachi,Clifton,Vandalism,Morning,Friday,21,Medium
+Karachi,Defence,Theft,Afternoon,Tuesday,94,Medium
+Karachi,Defence,Assault,Afternoon,Saturday,94,High
+Islamabad,G-10,Theft,Morning,Monday,52,Medium
+Karachi,Defence,Assault,Morning,Monday,18,Medium
+Multan,Hussain Agahi,Theft,Night,Thursday,20,Medium
+Islamabad,F-7,Assault,Night,Tuesday,20,Medium
+Islamabad,F-7,Assault,Afternoon,Friday,20,Medium
+Islamabad,F-7,Assault,Afternoon,Saturday,20,Medium
+Islamabad,F-7,Theft,Night,Monday,20,Medium
+Karachi,Clifton,Theft,Night,Friday,139,High
+Karachi,Defence,Vandalism,Afternoon,Saturday,94,Medium
+Islamabad,F-7,Theft,Morning,Saturday,60,Medium
+Multan,Bosan Road,Vandalism,Morning,Saturday,61,Medium
+Islamabad,F-7,Vandalism,Afternoon,Monday,20,Medium
+Karachi,Clifton,Vandalism,Morning,Friday,21,Medium
+Lahore,Johar Town,Theft,Afternoon,Monday,20,Medium
+Karachi,Saddar,Theft,Afternoon,Tuesday,138,Medium
+Lahore,Johar Town,Fraud,Afternoon,Thursday,20,Medium
+Multan,Bosan Road,Fraud,Morning,Monday,61,Medium
+Islamabad,G-10,Fraud,Night,Saturday,20,Medium
+Islamabad,G-10,Theft,Morning,Monday,52,Medium
+Multan,Hussain Agahi,Fraud,Afternoon,Tuesday,20,Medium
+Multan,Hussain Agahi,Assault,Morning,Monday,50,Medium
+Karachi,Saddar,Theft,Afternoon,Friday,138,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Thursday,50,Medium
+Lahore,DHA,Theft,Afternoon,Wednesday,9,Medium
+Lahore,Model Town,Assault,Afternoon,Friday,9,Medium
+Multan,Hussain Agahi,Theft,Morning,Wednesday,50,Medium
+Karachi,Clifton,Vandalism,Night,Friday,139,Medium
+Karachi,Saddar,Theft,Night,Friday,17,Medium
+Islamabad,F-7,Theft,Morning,Tuesday,60,Medium
+Multan,Bosan Road,Fraud,Morning,Tuesday,61,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Karachi,Saddar,Fraud,Night,Saturday,17,Medium
+Karachi,Defence,Vandalism,Afternoon,Thursday,94,Medium
+Karachi,Saddar,Assault,Afternoon,Saturday,138,High
+Islamabad,G-10,Vandalism,Night,Tuesday,20,Medium
+Multan,Bosan Road,Assault,Morning,Saturday,61,Medium
+Islamabad,G-10,Theft,Afternoon,Wednesday,20,Medium
+Islamabad,G-10,Assault,Afternoon,Saturday,20,Medium
+Karachi,Saddar,Fraud,Afternoon,Thursday,138,Medium
+Karachi,Saddar,Fraud,Afternoon,Tuesday,138,Medium
+Multan,Hussain Agahi,Vandalism,Afternoon,Saturday,20,Medium
+Karachi,Defence,Assault,Afternoon,Monday,94,High
+Karachi,Defence,Theft,Afternoon,Sunday,94,Medium
+Karachi,Saddar,Assault,Night,Monday,17,Medium
+Multan,Hussain Agahi,Theft,Afternoon,Wednesday,20,Medium
+Karachi,Defence,Fraud,Morning,Tuesday,18,Medium
+Lahore,DHA,Theft,Morning,Monday,9,Low
+Karachi,Saddar,Vandalism,Afternoon,Thursday,138,Medium
+Islamabad,F-7,Fraud,Night,Friday,20,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Lahore,Johar Town,Assault,Morning,Saturday,60,Medium
+Karachi,Saddar,Fraud,Afternoon,Wednesday,138,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Karachi,Defence,Vandalism,Afternoon,Wednesday,94,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Sunday,50,Medium
+Islamabad,G-10,Theft,Morning,Friday,52,Medium
+Islamabad,F-7,Assault,Morning,Friday,60,Medium
+Islamabad,F-7,Assault,Morning,Thursday,60,Medium
+Karachi,Clifton,Vandalism,Night,Saturday,139,Medium
+Karachi,Defence,Vandalism,Afternoon,Monday,94,Medium
+Karachi,Clifton,Fraud,Night,Friday,139,High
+Islamabad,G-10,Fraud,Morning,Wednesday,52,Medium
+Karachi,Clifton,Vandalism,Morning,Friday,21,Medium
+Islamabad,G-10,Vandalism,Morning,Thursday,52,Medium
+Karachi,Defence,Vandalism,Afternoon,Monday,94,Medium
+Multan,Bosan Road,Assault,Morning,Friday,61,Medium
+Karachi,Defence,Fraud,Afternoon,Wednesday,94,Medium
+Karachi,Defence,Assault,Afternoon,Wednesday,94,High
+Karachi,Defence,Theft,Afternoon,Friday,94,Medium
+Islamabad,G-10,Assault,Afternoon,Wednesday,20,Medium
+Multan,Hussain Agahi,Vandalism,Morning,Thursday,50,Medium
+Karachi,Saddar,Fraud,Afternoon,Monday,138,Medium
+Lahore,Johar Town,Theft,Afternoon,Wednesday,20,Medium
+Multan,Hussain Agahi,Theft,Night,Wednesday,20,Medium
+Lahore,Johar Town,Fraud,Night,Wednesday,20,Medium
+Karachi,Defence,Vandalism,Afternoon,Thursday,94,Medium
+Karachi,Clifton,Assault,Night,Friday,139,High
+Multan,Bosan Road,Fraud,Afternoon,Monday,20,Medium
+Lahore,Johar Town,Assault,Afternoon,Thursday,20,Medium
+Multan,Bosan Road,Assault,Morning,Sunday,61,Medium
+Karachi,Saddar,Theft,Afternoon,Wednesday,138,Medium
+Lahore,Model Town,Fraud,Morning,Thursday,9,Low
+Lahore,Johar Town,Fraud,Morning,Sunday,60,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Lahore,Johar Town,Theft,Morning,Thursday,60,Medium
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Multan,Bosan Road,Vandalism,Morning,Sunday,61,Medium
+Karachi,Clifton,Theft,Afternoon,Friday,18,Medium
+Karachi,Clifton,Theft,Night,Saturday,139,High
+Islamabad,G-10,Fraud,Night,Thursday,20,Medium
+Multan,Bosan Road,Fraud,Morning,Wednesday,61,Medium
+Karachi,Clifton,Assault,Night,Saturday,139,High
+Islamabad,G-10,Theft,Afternoon,Tuesday,20,Medium
+Islamabad,F-7,Theft,Morning,Thursday,60,Medium
+Lahore,Johar Town,Vandalism,Morning,Thursday,60,Medium
+Multan,Bosan Road,Vandalism,Night,Wednesday,14,Medium
+Lahore,DHA,Theft,Morning,Sunday,9,Low
+Lahore,Johar Town,Fraud,Morning,Tuesday,60,Medium
+Lahore,Johar Town,Vandalism,Night,Monday,20,Medium
+Karachi,Defence,Fraud,Afternoon,Tuesday,94,Medium
+Karachi,Saddar,Assault,Afternoon,Monday,138,High
+Karachi,Defence,Theft,Afternoon,Sunday,94,Medium
+Karachi,Saddar,Fraud,Afternoon,Saturday,138,Medium
+Karachi,Defence,Theft,Afternoon,Wednesday,94,Medium
+Islamabad,G-10,Vandalism,Morning,Wednesday,52,Medium
+Islamabad,G-10,Assault,Morning,Monday,52,Medium
+Karachi,Saddar,Assault,Afternoon,Monday,138,High
+Karachi,Clifton,Assault,Night,Friday,139,High
+Karachi,Saddar,Vandalism,Afternoon,Tuesday,138,Medium
+Lahore,Johar Town,Vandalism,Morning,Friday,60,Medium
+Karachi,Saddar,Fraud,Afternoon,Tuesday,138,Medium
+Multan,Hussain Agahi,Theft,Morning,Tuesday,50,Medium
+Lahore,Johar Town,Theft,Morning,Sunday,60,Medium
+Lahore,DHA,Vandalism,Afternoon,Tuesday,9,Low
+Multan,Bosan Road,Fraud,Morning,Saturday,61,Medium
+Karachi,Saddar,Assault,Afternoon,Wednesday,138,High
+Karachi,Clifton,Fraud,Night,Saturday,139,High
+Karachi,Saddar,Theft,Night,Wednesday,17,Medium
+Islamabad,G-10,Vandalism,Morning,Saturday,52,Medium
+Islamabad,F-7,Vandalism,Morning,Sunday,60,Medium
+Karachi,Clifton,Theft,Morning,Thursday,21,Medium
+Karachi,Saddar,Vandalism,Afternoon,Monday,138,Medium
+Karachi,Defence,Assault,Morning,Tuesday,18,Medium

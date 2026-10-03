@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Splash screen: app logo and title, displayed for 2 seconds -->
+<!-- Splash screen: logo centered, loader at bottom -->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,34 +9,15 @@
 
     <ImageView
         android:id="@+id/splashLogo"
-        android:layout_width="220dp"
-        android:layout_height="90dp"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
         android:src="@drawable/app_logo"
         android:contentDescription="@string/app_name"
         android:scaleType="centerInside"
-        android:alpha="0"
-        android:translationY="24dp"
-        android:animation="@anim/fade_in_slide_up"
-        app:layout_constraintBottom_toTopOf="@id/splashTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <TextView
-        android:id="@+id/splashTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/splash_title"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/splashLogo" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ProgressBar
         android:id="@+id/splashProgress"
@@ -44,8 +25,9 @@
         android:layout_height="wrap_content"
         android:indeterminate="true"
         android:indeterminateDrawable="@drawable/progress_predict_indeterminate"
+        android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="48dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

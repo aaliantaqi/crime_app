@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">639165802238</string>
-    <string name="google_api_key" translatable="false">AIzaSyDWMTc1mdtx974LBNvxZ-Hst7Y3r1sDT7U</string>
-    <string name="google_app_id" translatable="false">1:639165802238:android:b6161390674b626c1f27af</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDWMTc1mdtx974LBNvxZ-Hst7Y3r1sDT7U</string>
-    <string name="google_storage_bucket" translatable="false">crime-prediction-app-23f55.firebasestorage.app</string>
-    <string name="project_id" translatable="false">crime-prediction-app-23f55</string>
-</resources>

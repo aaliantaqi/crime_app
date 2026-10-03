@@ -20,8 +20,8 @@ import com.crimeprediction.app.utils.FirebaseHelper;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
-import com.google.firebase.firestore.FieldValue;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,7 +47,6 @@ public class PredictionActivity extends AppCompatActivity {
     private String selectedCategory = "";
 
     private ApiService apiService;
-    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +61,6 @@ public class PredictionActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
         apiService = ApiClient.getApiService();
-        db = FirebaseHelper.getFirestore();
 
         spinnerCity = findViewById(R.id.spinnerCity);
         spinnerArea = findViewById(R.id.spinnerArea);
@@ -103,19 +101,19 @@ public class PredictionActivity extends AppCompatActivity {
         String[] areas;
         switch(city) {
             case "Multan":
-                areas = new String[]{"Gulgasht", "Hussain Agahi", "Bosan Road"};
+                areas = new String[]{"Select Area", "Gulgasht", "Hussain Agahi", "Bosan Road"};
                 break;
             case "Lahore":
-                areas = new String[]{"DHA", "Model Town"};
+                areas = new String[]{"Select Area", "DHA", "Model Town", "Johar Town"};
                 break;
             case "Karachi":
-                areas = new String[]{"Saddar"};
+                areas = new String[]{"Select Area", "Saddar", "Clifton", "Defence"};
                 break;
             case "Islamabad":
-                areas = new String[]{"F-7"};
+                areas = new String[]{"Select Area", "F-7", "F-8", "G-10"};
                 break;
             default:
-                areas = new String[]{};
+                areas = new String[]{"Select Area"};
         }
         ArrayAdapter<String> areaAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, areas);
         areaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -124,7 +122,7 @@ public class PredictionActivity extends AppCompatActivity {
     private void setupSpinners() {
         String[] times = {"Morning", "Afternoon", "Night"};
         String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-        String[] categories = {"(Optional)", "Robbery", "Theft", "Assault", "Burglary", "Other"};
+        String[] categories = {"Select Category", "Theft", "Assault", "Fraud", "Vandalism"};
 
         ArrayAdapter<String> timeAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, times);
         timeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -164,53 +162,83 @@ public class PredictionActivity extends AppCompatActivity {
     }
 
     private void performPrediction() {
-        // Check if city and area are selected
-        if (spinnerCity.getSelectedItem() == null || spinnerArea.getSelectedItem() == null) {
-            Toast.makeText(this, "Please select a city and area", Toast.LENGTH_SHORT).show();
-            return; // Stop execution
+
+        String city = spinnerCity.getSelectedItem() != null
+                ? spinnerCity.getSelectedItem().toString() : "";
+        String area = spinnerArea.getSelectedItem() != null
+                ? spinnerArea.getSelectedItem().toString() : "";
+
+        if (city.equals("Select City") || city.isEmpty()) {
+            Toast.makeText(this, "Please select a city", Toast.LENGTH_SHORT).show();
+            return;
         }
-
-        String city = spinnerCity.getSelectedItem().toString();
-        String area = spinnerArea.getSelectedItem().toString();
-
-        if (city.isEmpty() || area.isEmpty()) {
-            Toast.makeText(this, "Please select a city and area", Toast.LENGTH_SHORT).show();
+        if (area.equals("Select Area") || area.isEmpty()) {
+            Toast.makeText(this, "Please select an area", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (selectedCategory == null || selectedCategory.isEmpty()) {
+            Toast.makeText(this, "Please select a crime category", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // Proceed with prediction
+        // UI loading
         cardResult.setVisibility(View.GONE);
         btnPredict.setEnabled(false);
         progressPredict.setVisibility(View.VISIBLE);
 
+        // Go straight to the backend — it's the single source of truth for risk_level
+        callApiPrediction(city, area, 0);
+    }
+
+    private void showResult(PredictionResult result) {
+        cardResult.setVisibility(View.VISIBLE);
+        String risk = result.getRiskLevel() != null ? result.getRiskLevel() : "Unknown";
+        textRiskLevel.setText(risk);
+        textProbability.setText(String.format("%.0f%%", result.getProbability() * 100));
+
+        String predictedCrime;
+        if (selectedCategory != null && !selectedCategory.isEmpty()) {
+            predictedCrime = selectedCategory;  // Show what user selected
+        } else {
+            predictedCrime = result.getPredictedCrime() != null && !result.getPredictedCrime().isEmpty()
+                    ? result.getPredictedCrime() : "—";
+        }
+        textPredictedCrime.setText(predictedCrime);
+
+        int colorRes = R.color.risk_medium;
+        if ("High".equalsIgnoreCase(risk)) colorRes = R.color.risk_high;
+        else if ("Low".equalsIgnoreCase(risk)) colorRes = R.color.risk_low;
+        textRiskLevel.setTextColor(getResources().getColor(colorRes, getTheme()));
+    }
+    private void callApiPrediction(String city, String area, int count) {
+
         PredictRequest request = new PredictRequest(city, area, selectedTime, selectedDay);
-        if (!selectedCategory.isEmpty()) request.setCrimeCategory(selectedCategory);
+
+        if (!selectedCategory.isEmpty()) {
+            request.setCrimeCategory(selectedCategory);
+        }
+
 
         apiService.predictCrime(request).enqueue(new Callback<PredictionResult>() {
             @Override
             public void onResponse(Call<PredictionResult> call, Response<PredictionResult> response) {
+
                 progressPredict.setVisibility(View.GONE);
                 btnPredict.setEnabled(true);
 
                 if (response.isSuccessful() && response.body() != null) {
+
                     PredictionResult result = response.body();
 
-                    boolean valid = true;
-                    if (result.getPredictedCrime() == null || result.getPredictedCrime().isEmpty()) {
-                        valid = false;
-                    }
-                    if (!selectedCategory.isEmpty() && !result.getPredictedCrime().equalsIgnoreCase(selectedCategory)) {
-                        valid = false;
-                    }
-
-                    if (valid) {
-                        showResult(result);
-                        savePredictionHistory(city, area, result);
-                    } else {
+                    if (result.getRiskLevel() == null || result.getRiskLevel().isEmpty()) {
                         cardResult.setVisibility(View.VISIBLE);
                         textRiskLevel.setText("—");
                         textProbability.setText("—");
-                        textPredictedCrime.setText("No prediction available");
+                        textPredictedCrime.setText(result.getPredictedCrime() != null ? result.getPredictedCrime() : "—");
+
+                    } else {
+                        showResult(result);
+                        savePredictionHistory(city, area, result);
                     }
 
                 } else {
@@ -222,27 +250,15 @@ public class PredictionActivity extends AppCompatActivity {
             public void onFailure(Call<PredictionResult> call, Throwable t) {
                 progressPredict.setVisibility(View.GONE);
                 btnPredict.setEnabled(true);
-                Toast.makeText(PredictionActivity.this, "Network error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(PredictionActivity.this, "Network error", Toast.LENGTH_SHORT).show();
             }
         });
     }
-
-    private void showResult(PredictionResult result) {
-        cardResult.setVisibility(View.VISIBLE);
-        String risk = result.getRiskLevel() != null ? result.getRiskLevel() : "Unknown";
-        textRiskLevel.setText(risk);
-        textProbability.setText(String.format("%.0f%%", result.getProbability() * 100));
-        textPredictedCrime.setText(result.getPredictedCrime() != null ? result.getPredictedCrime() : "—");
-
-        int colorRes = R.color.risk_medium;
-        if ("High".equalsIgnoreCase(risk)) colorRes = R.color.risk_high;
-        else if ("Low".equalsIgnoreCase(risk)) colorRes = R.color.risk_low;
-        textRiskLevel.setTextColor(getResources().getColor(colorRes, getTheme()));
-    }
-
     private void savePredictionHistory(String city, String area, PredictionResult result) {
+
         String uid = FirebaseHelper.getCurrentUserId();
         if (uid == null) return;
+
         Map<String, Object> data = new HashMap<>();
         data.put("userId", uid);
         data.put("city", city);
@@ -250,7 +266,10 @@ public class PredictionActivity extends AppCompatActivity {
         data.put("riskLevel", result.getRiskLevel());
         data.put("probability", result.getProbability());
         data.put("predictedCrime", result.getPredictedCrime());
-        data.put("timestamp", FieldValue.serverTimestamp());
-        db.collection("prediction_history").add(data);
+        data.put("timestamp", System.currentTimeMillis());
+
+        // ✅ SAVE TO REALTIME DATABASE (not Firestore)
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Predictions");
+        ref.push().setValue(data);
     }
 }

@@ -16,7 +16,7 @@
     <string name="area">Area</string>
     <string name="time_of_day">Time of Day</string>
     <string name="day_of_week">Day of Week</string>
-    <string name="crime_category">Crime Category (Optional)</string>
+    <string name="crime_category">Crime Category</string>
     <string name="predict_risk">Predict Crime Risk</string>
     <string name="risk_level">Risk Level</string>
     <string name="probability">Probability</string>
@@ -27,5 +27,8 @@
     <string name="date">Date</string>
     <string name="submit_report">Submit Report</string>
     <string name="logout">Logout</string>
-    <string name="report_heading">Report a Crime Easily</string>
+    <string name="report_heading">Report a Crime</string>
+
+    <!-- Firebase Realtime Database (regional) -->
+    <string name="firebase_database_url">https://crime-prediction-app-23f55-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </resources>

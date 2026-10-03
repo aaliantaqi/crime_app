@@ -1,0 +1,29 @@
+# Editor settings
+.idea/
+.vscode/
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+target/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Secrets and local config
+.env
+*.env
+.env.local
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Android
+local.properties
+.gradle/
+*.apk
+captures/
+crime_backend/IMP_Backend/reports.json

@@ -11,13 +11,6 @@ import com.crimeprediction.app.R;
 import com.google.android.material.card.MaterialCardView;
 import com.google.firebase.auth.FirebaseAuth;
 
-/**
- * Dashboard: main navigation with 4 cards
- * - Predict Crime
- * - Crime Map
- * - Crime Statistics
- * - Report Crime.
- */
 public class DashboardActivity extends AppCompatActivity {
 
     @Override

@@ -4,6 +4,7 @@
 
     <!-- Permissions for location and network -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
@@ -17,10 +18,11 @@
         android:theme="@style/Theme.CrimePredictionApp"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <!-- Replace with your Google Maps API key from Google Cloud Console -->
+
+        <!-- Ensure Firebase RTDB uses the correct regional database URL -->
         <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+            android:name="firebase_database_url"
+            android:value="@string/firebase_database_url" />
 
         <!-- Splash screen - LAUNCHER -->
         <activity

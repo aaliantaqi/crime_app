@@ -19,6 +19,12 @@ public class CrimeData {
     @SerializedName("date")
     private String date;
 
+    // Firebase filtering fields (also present in API payloads, if any)
+    @SerializedName("city")
+    private String city;
+    @SerializedName("area")
+    private String area;
+
     public CrimeData() {}
 
     public CrimeData(String location, String crimeType, String riskLevel, double lat, double lng, String date) {
@@ -42,4 +48,9 @@ public class CrimeData {
     public void setLng(double lng) { this.lng = lng; }
     public String getDate() { return date; }
     public void setDate(String date) { this.date = date; }
+
+    public String getCity() { return city; }
+    public void setCity(String city) { this.city = city; }
+    public String getArea() { return area; }
+    public void setArea(String area) { this.area = area; }
 }

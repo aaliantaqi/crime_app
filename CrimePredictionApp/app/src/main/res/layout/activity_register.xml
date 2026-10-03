@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/bg_dashboard"
     android:fillViewport="true">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:text="Create Your Account"
             android:textSize="26sp"
             android:textStyle="bold"
-            android:textColor="@color/primary"
+            android:textColor="@color/white"
             android:gravity="center"
             android:layout_marginTop="20dp"/>
 
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="Register to Access Crime Prediction"
             android:textSize="15sp"
-            android:textColor="@color/text_secondary"
+            android:textColor="@color/white"
             android:gravity="center"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="10dp"/>
@@ -104,7 +104,9 @@
                         android:id="@+id/editPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        app:endIconMode="password_toggle"
+                        app:errorEnabled="false"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -120,7 +122,9 @@
                         android:id="@+id/editConfirmPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        app:endIconMode="password_toggle"
+                        app:errorEnabled="false"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
@@ -150,6 +154,13 @@
                     style="@style/Widget.CrimeApp.Button.Outline"
                     android:stateListAnimator="@animator/button_press_state" />
 
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>

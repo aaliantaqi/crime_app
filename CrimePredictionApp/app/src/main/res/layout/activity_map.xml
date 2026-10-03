@@ -6,29 +6,58 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/primary"
+            android:elevation="6dp"
+            app:navigationIconTint="@color/white"
             app:title="@string/crime_map"
-            app:titleTextColor="@color/white"
-            app:navigationIconTint="@color/white" />
-    </com.google.android.material.appbar.AppBarLayout>
+            app:titleTextColor="@color/white" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-        <fragment
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+        <LinearLayout
+            android:id="@+id/filterRow"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/white"
+            android:elevation="8dp">
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerArea"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
 
         <ProgressBar
             android:id="@+id/progressMap"
@@ -38,5 +67,17 @@
             android:indeterminate="true"
             android:indeterminateDrawable="@drawable/progress_predict_indeterminate"
             android:visibility="gone" />
+        <TextView
+            android:id="@+id/textMapEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Please select a city to view crime map"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:padding="24dp"
+            android:visibility="visible" />
     </FrameLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

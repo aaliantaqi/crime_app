@@ -28,8 +28,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layoutAnimation="@anim/layout_fade_in_slide_up">
+            android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
@@ -47,56 +46,25 @@
                         android:layout_height="wrap_content"
                         android:text="Select City"
                         android:textSize="14sp"
-                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textColor="@color/text_primary"
                         android:layout_marginBottom="8dp" />
 
-                    <com.google.android.material.button.MaterialButtonToggleGroup
-                        android:id="@+id/toggleCity"
+                    <!-- ✅ NEW CITY SPINNER -->
+                    <Spinner
+                        android:id="@+id/spinnerCity"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:singleSelection="true"
-                        app:selectionRequired="true">
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btnCityMultan"
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Multan"
-                            android:checked="true" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btnCityLahore"
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Lahore" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btnCityKarachi"
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Karachi" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btnCityIslamabad"
-                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Islamabad" />
-                    </com.google.android.material.button.MaterialButtonToggleGroup>
+                        android:layout_height="48dp"
+                        android:background="@drawable/spinner_bg"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:spinnerMode="dropdown" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Area"
+                        android:text="@string/area"
                         android:textSize="14sp"
-                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textColor="@color/text_primary"
                         android:layout_marginTop="12dp"
                         android:layout_marginBottom="4dp" />
 
@@ -121,82 +89,20 @@
                 android:padding="24dp"
                 android:textSize="16sp" />
 
-            <LinearLayout
-                android:id="@+id/layoutCharts"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/pagerCharts"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.CrimeApp.Card">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Monthly Crime Trend"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="8dp" />
-                    <com.github.mikephil.charting.charts.LineChart
-                        android:id="@+id/chartTrend"
-                        android:layout_width="match_parent"
-                        android:layout_height="220dp" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                android:layout_height="520dp"
+                android:layout_marginTop="8dp" />
 
-            <com.google.android.material.card.MaterialCardView
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabsCharts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.CrimeApp.Card">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Crime Category Distribution"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="8dp" />
-                    <com.github.mikephil.charting.charts.PieChart
-                        android:id="@+id/chartPie"
-                        android:layout_width="match_parent"
-                        android:layout_height="220dp" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/Widget.CrimeApp.Card">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="High Risk Areas"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="8dp" />
-                    <com.github.mikephil.charting.charts.BarChart
-                        android:id="@+id/chartBar"
-                        android:layout_width="match_parent"
-                        android:layout_height="220dp" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
+                android:layout_marginTop="8dp"
+                app:tabIndicatorFullWidth="false"
+                app:tabMode="fixed"
+                app:tabGravity="fill" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
